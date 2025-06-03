@@ -1,5 +1,5 @@
 ---
-title: Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models
+title: Conformal Arbitrage\: Risk-Controlled Balancing of Competing Objectives in Language Models
 authors:
   - William Overman
   - Mohsen Bayati
