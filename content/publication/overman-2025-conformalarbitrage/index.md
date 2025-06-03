@@ -14,7 +14,7 @@ links:
   - name: arXiv
     url: https://arxiv.org/abs/2506.00911
 image:
-  caption: 'Plot of helpfulness veruss harmlessnes showing that we can use Conformal Arbitrage to trace a more efficient frontier of tradeoffs between competing objectives than baseline using only API access to language models. 
+  caption: 'Plot of helpfulness veruss harmlessnes showing that we can use Conformal Arbitrage to trace a more efficient frontier of tradeoffs between competing objectives than baseline using only API access to language models.'
 focal_point: ''
 preview_only: false
 ---
