@@ -7,8 +7,7 @@ authors:
 - Dabeen Lee
 date: '2024-10-04'
 publishDate: '2024-10-04'
-publication_types:
-- paper-conference
+publication_types: paper-conference
 publication: '**RLC 2025**'
 links:
 - name: arXiv
