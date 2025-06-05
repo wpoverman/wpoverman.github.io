@@ -11,6 +11,6 @@ publication_types:
 - paper-conference
 publication: '**RLC 2025**'
 links:
-- name: arXiv
+- name: URL
   url: https://arxiv.org/pdf/2410.10158
 ---
