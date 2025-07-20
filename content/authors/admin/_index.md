@@ -78,14 +78,13 @@ education:
     summary: |
       GPA: 4.1/4.3
 
-interests:
-  - AI Alignment
-  - Experimentation
-  - Reinforcement Learning 
-  - Healthcare
+# interests:
+#   - AI Alignment
+#   - Reinforcement Learning 
+#   - Causal Inference
 
 work:
-  - position: Applied Scientist PhD Intern
+  - position: PhD Scientist Intern
     company_name: Uber
     company_url: ''
     company_logo: ''
@@ -181,4 +180,4 @@ work:
 
 ## About Me
 
-I’m a PhD student at Stanford advised by [Mohsen Bayati](https://web.stanford.edu/~bayati/). I’m passionate about AI safety and alignment, especially obtaining results with provable guarantees. My research also spans reinforcement learning, causal inference, and black-box uncertainty quantification, with particular interest in how each might intersect with AI alignment.
+I’m a PhD student at Stanford advised by [Mohsen Bayati](https://web.stanford.edu/~bayati/). I’m passionate about AI safety and alignment, especially obtaining results with provable guarantees. My research also spans reinforcement learning, causal inference, and black-box uncertainty quantification, with interest in how each might intersect with AI alignment.
