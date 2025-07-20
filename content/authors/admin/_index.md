@@ -181,8 +181,4 @@ work:
 
 ## About Me
 
-Hi, I'm a PhD student at Stanford Graduate School of Business in the Operations, Information, and Technology group. My research interests mainly fall between machine learning and experimentation, with a focus on AI alignment, network interference in experiments, and reinforcement learning. I have interned at Uber, where I applied my research in RL and experimentation to large-scale problems, succesfully running XPs and guiding XP design.
-
-I completed my undergraduate studies at Caltech, double majoring in mathematics and computer science, with a focus on combinatorics and complexity theory. After graduating in Spring 2020, I spent most of the COVID-19 pandemic in South Korea as a visiting researcher at the Institute for Basic Science. During this time, I also obtained a master's degree in computer science from UC Irvine, focusing on research in multi-agent reinforcement learning.
-
-
+I’m a PhD student at Stanford advised by [Mohsen Bayati](https://web.stanford.edu/~bayati/). I’m passionate about AI safety and alignment, especially obtaining results with provable guarantees. My research also spans reinforcement learning, causal inference, and black-box uncertainty quantification, with particular interest in how each might intersect with AI alignment.
