@@ -1,7 +1,11 @@
+# Site
+url: "https://wpoverman.github.io"
+baseurl: ""   # IMPORTANT: empty for a user/organization site at root
+
+# Jekyll defaults
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: /msaveski
 
 collections:
   projects:
