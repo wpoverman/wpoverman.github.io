@@ -37,14 +37,12 @@ papers:
 
   - title: "Improved Regret Bound for Safe Reinforcement Learning via Tighter Cost Pessimism and Reward Optimism"
     authors: "K Yu, D Lee, <b>W Overman</b>, D Lee"
-    venue: |
-      "RLC 2025 (Reinforcement Learning Conference)."
-      "Journal version: Reinforcement Learning Journal (2025)."
+    venue: "RLC 2025 (Reinforcement Learning Conference).<br>Journal version: Reinforcement Learning Journal (2025)."
     selected: n
 
   - title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
     authors: "SH Kim<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, J Pauphilet<sup>‡</sup>, WC Cha"
-    venue: "2024 (Venue not specified)"
+    venue: "Major Revision at Manufacturing & Service Operations Management (MSOM).""
     selected: n
   
   - title: "Global convergence of multi-agent policy gradient in markov potential games"
