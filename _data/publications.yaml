@@ -42,7 +42,7 @@ papers:
 
   - title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
     authors: "SH Kim<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, J Pauphilet<sup>‡</sup>, WC Cha"
-    venue: "Major Revision at Manufacturing & Service Operations Management (MSOM).""
+    venue: "Major Revision at Manufacturing & Service Operations Management (MSOM)."
     selected: n
   
   - title: "Global convergence of multi-agent policy gradient in markov potential games"
