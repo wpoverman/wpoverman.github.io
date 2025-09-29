@@ -25,6 +25,7 @@ papers:
   - title: "Aligning Model Properties via Conformal Risk Control"
     authors: "<b>W Overman</b>, JJ Vallon, M Bayati"
     venue: "NeurIPS'24: Neural Information Processing Systems. 2024."
+    paper_pdf: "/assets/publications/2024_aligning_properties/paper.pdf"
     selected: y
 
   - title: "Higher-Order Causal Message Passing for Experimentation with Complex Interference"
