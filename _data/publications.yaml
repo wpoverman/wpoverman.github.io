@@ -38,6 +38,7 @@ papers:
   - title: "Beating price of anarchy and gradient descent without regret in potential games"
     authors: "I Sakos, S Leonardos, SA Stavroulakis, <b>W Overman</b>, I Panageas, G Piliouras"
     venue: "ICLR'24: International Conference on Learning Representations. 2024."
+    paper_pdf: "/assets/publications/2024_beating_price/paper.pdf"
     selected: n
 
   - title: "Improved Regret Bound for Safe Reinforcement Learning via Tighter Cost Pessimism and Reward Optimism"
