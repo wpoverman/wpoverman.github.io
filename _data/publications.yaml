@@ -58,6 +58,7 @@ papers:
   - title: "Independent natural policy gradient always converges in markov potential games"
     authors: "R Fox<sup>‡</sup>, SM McAleer<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, I Panageas<sup>‡</sup>"
     venue: "AISTATS'22: Artificial Intelligence and Statistics. 2022."
+    paper_pdf: "/assets/publications/2022_independent_natural/paper.pdf"
     selected: y
 
   - title: "Some Ordered Ramsey Numbers of Graphs on Four Vertices"
