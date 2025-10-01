@@ -20,6 +20,7 @@ papers:
   - title: "On aligning prediction models with clinical experiential learning: A prostate cancer case study"
     authors: "JJ Vallon, <b>W Overman</b>, W Xu, N Panjwani, X Ling, S Vij, HP Bagshaw, ..."
     venue: "arXiv'25: arXiv preprint arXiv:2509.04053. 2025."
+    paper_pdf: "/assets/publications/2025_aligning_clinical/paper.pdf"
     selected: n
 
   - title: "Aligning Model Properties via Conformal Risk Control"
