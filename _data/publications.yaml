@@ -44,6 +44,7 @@ papers:
   - title: "Improved Regret Bound for Safe Reinforcement Learning via Tighter Cost Pessimism and Reward Optimism"
     authors: "K Yu, D Lee, <b>W Overman</b>, D Lee"
     venue: "RLC 2025 (Reinforcement Learning Conference).<br>Journal version: Reinforcement Learning Journal (2025)."
+    paper_pdf: "/assets/publications/2025_cost_pessimism/paper.pdf"
     selected: n
 
   - title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
