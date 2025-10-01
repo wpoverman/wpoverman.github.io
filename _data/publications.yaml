@@ -31,7 +31,7 @@ papers:
   - title: "Higher-Order Causal Message Passing for Experimentation with Complex Interference"
     authors: "M Bayati<sup>‡</sup>, Y Luo<sup>‡</sup>, <b>W Overman</b><sup>‡</sup>, S Shirani<sup>‡</sup>, R Xiong<sup>‡</sup>"
     venue: "NeurIPS'24: Neural Information Processing Systems. 2024."
-    paper_pdf: "/assets/publications/2024_higher_order/paper"
+    paper_pdf: "/assets/publications/2024_higher_order/paper.pdf"
     selected: y
 
   - title: "Beating price of anarchy and gradient descent without regret in potential games"
