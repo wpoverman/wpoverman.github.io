@@ -50,6 +50,7 @@ papers:
   - title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
     authors: "SH Kim<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, J Pauphilet<sup>‡</sup>, WC Cha"
     venue: "Major Revision at Manufacturing & Service Operations Management (MSOM)."
+    paper_pdf: "/assets/publications/2023_ocucpancy_prediction/paper.pdf"
     selected: n
   
   - title: "Global convergence of multi-agent policy gradient in markov potential games"
@@ -67,4 +68,5 @@ papers:
   - title: "Some Ordered Ramsey Numbers of Graphs on Four Vertices"
     authors: "<b>W Overman</b>, JF Alm, K Coffey, C Langhoff"
     venue: "Australasian Journal of Combinatorics, Vol 88(3), 266–281. 2024."
+    paper_pdf: "/assets/publications/2021_ordered_ramsey/paper.pdf"
     selected: n
