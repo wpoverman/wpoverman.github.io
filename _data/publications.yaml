@@ -1,8 +1,8 @@
 papers:
 
-  - title: "Ask or Play: Scalable Oversight through Markov Potential Games"
+  - title: "Ask or Play: AI Control in Markov Games"
     authors: "<b>W Overman</b>, M Bayati"
-    venue: "NeurIPS'25 Workshop: ML×OR Workshop. 2025."
+    venue: "Early version in NeurIPS'25 Workshop: ML×OR Workshop. 2025."
     selected: y
 
   - title: "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
