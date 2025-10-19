@@ -34,6 +34,7 @@ papers:
     authors: "M Bayati<sup>‡</sup>, Y Luo<sup>‡</sup>, <b>W Overman</b><sup>‡</sup>, S Shirani<sup>‡</sup>, R Xiong<sup>‡</sup>"
     venue: "NeurIPS'24: Neural Information Processing Systems. 2024."
     paper_pdf: "/assets/publications/2024_higher_order/paper.pdf"
+    code: "https://github.com/CausalMP/CausalMP"
     selected: y
 
   - title: "Beating price of anarchy and gradient descent without regret in potential games"
@@ -58,12 +59,14 @@ papers:
     authors: "S Leonardos<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, I Panageas<sup>‡</sup>, G Piliouras<sup>‡</sup>"
     venue: "ICLR'22: International Conference on Learning Representations. 2022."
     paper_pdf: "/assets/publications/2022_global_convergence/paper.pdf"
+    code: "https://github.com/wpoverman/MPG"
     selected: y
 
   - title: "Independent natural policy gradient always converges in markov potential games"
     authors: "R Fox<sup>‡</sup>, SM McAleer<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, I Panageas<sup>‡</sup>"
     venue: "AISTATS'22: Artificial Intelligence and Statistics. 2022."
     paper_pdf: "/assets/publications/2022_independent_natural/paper.pdf"
+    code: "https://github.com/wpoverman/MPG"
     selected: y
 
   - title: "Some Ordered Ramsey Numbers of Graphs on Four Vertices"
