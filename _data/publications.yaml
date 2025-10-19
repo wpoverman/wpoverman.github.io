@@ -15,6 +15,7 @@ papers:
   - title: "Can We Validate Counterfactual Estimations in the Presence of General Network Interference?"
     authors: "S Shirani, Y Luo, <b>W Overman</b>, R Xiong, M Bayati"
     venue: "arXiv'25: arXiv preprint arXiv:2502.01106. 2025.<br> Accepted for Oral Presentation at the Conference on Digital Experimentation @ MIT (CODE@MIT), 2025<br>Accepted for presentation at the MSOM Technology, Innovation, and Entrepreneurship SIG, 2025."
+    arxiv: "https://arxiv.org/abs/2502.01106"
     paper_pdf: "/assets/publications/2025_validate_counterfactual_estimates/paper.pdf"
     code: "https://github.com/CausalMP/CausalMP"
     selected: y
@@ -22,18 +23,21 @@ papers:
   - title: "On aligning prediction models with clinical experiential learning: A prostate cancer case study"
     authors: "JJ Vallon, <b>W Overman</b>, W Xu, N Panjwani, X Ling, S Vij, HP Bagshaw, ..."
     venue: "arXiv'25: arXiv preprint arXiv:2509.04053. 2025."
+    arxiv: "https://arxiv.org/abs/2509.04053"
     paper_pdf: "/assets/publications/2025_aligning_clinical/paper.pdf"
     selected: n
 
   - title: "Aligning Model Properties via Conformal Risk Control"
     authors: "<b>W Overman</b>, JJ Vallon, M Bayati"
     venue: "NeurIPS'24: Neural Information Processing Systems. 2024."
+    arxiv: "https://arxiv.org/abs/2406.18777"
     paper_pdf: "/assets/publications/2024_aligning_properties/paper.pdf"
     selected: y
 
   - title: "Higher-Order Causal Message Passing for Experimentation with Complex Interference"
     authors: "M Bayati<sup>‡</sup>, Y Luo<sup>‡</sup>, <b>W Overman</b><sup>‡</sup>, S Shirani<sup>‡</sup>, R Xiong<sup>‡</sup>"
     venue: "NeurIPS'24: Neural Information Processing Systems. 2024."
+    arxiv: "https://arxiv.org/abs/2411.00945"
     paper_pdf: "/assets/publications/2024_higher_order/paper.pdf"
     code: "https://github.com/CausalMP/CausalMP"
     selected: y
@@ -41,24 +45,28 @@ papers:
   - title: "Beating price of anarchy and gradient descent without regret in potential games"
     authors: "I Sakos, S Leonardos, SA Stavroulakis, <b>W Overman</b>, I Panageas, G Piliouras"
     venue: "ICLR'24: International Conference on Learning Representations. 2024."
+    arxiv: "https://proceedings.iclr.cc/paper_files/paper/2024/hash/921ac785fa9edc73cacaf2664f43d234-Abstract-Conference.html"
     paper_pdf: "/assets/publications/2024_beating_price/paper.pdf"
     selected: n
 
   - title: "Improved Regret Bound for Safe Reinforcement Learning via Tighter Cost Pessimism and Reward Optimism"
     authors: "K Yu, D Lee, <b>W Overman</b>, D Lee"
     venue: "RLC 2025 (Reinforcement Learning Conference).<br>Journal version: Reinforcement Learning Journal (2025)."
+    arxiv: "https://arxiv.org/abs/2410.10158"
     paper_pdf: "/assets/publications/2025_cost_pessimism/paper.pdf"
     selected: n
 
   - title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
     authors: "SH Kim<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, J Pauphilet<sup>‡</sup>, WC Cha"
     venue: "Major Revision at Manufacturing & Service Operations Management (MSOM)."
+    arxiv: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523116"
     paper_pdf: "/assets/publications/2023_occupancy_prediction/paper.pdf"
     selected: n
   
   - title: "Global convergence of multi-agent policy gradient in markov potential games"
     authors: "S Leonardos<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, I Panageas<sup>‡</sup>, G Piliouras<sup>‡</sup>"
     venue: "ICLR'22: International Conference on Learning Representations. 2022."
+    arxiv: "https://arxiv.org/abs/2106.01969"
     paper_pdf: "/assets/publications/2022_global_convergence/paper.pdf"
     code: "https://github.com/wpoverman/MPG"
     selected: y
@@ -66,6 +74,7 @@ papers:
   - title: "Independent natural policy gradient always converges in markov potential games"
     authors: "R Fox<sup>‡</sup>, SM McAleer<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, I Panageas<sup>‡</sup>"
     venue: "AISTATS'22: Artificial Intelligence and Statistics. 2022."
+    arxiv: "https://arxiv.org/abs/2110.10614"
     paper_pdf: "/assets/publications/2022_independent_natural/paper.pdf"
     code: "https://github.com/wpoverman/MPG"
     selected: y
@@ -73,5 +82,6 @@ papers:
   - title: "Some Ordered Ramsey Numbers of Graphs on Four Vertices"
     authors: "<b>W Overman</b>, JF Alm, K Coffey, C Langhoff"
     venue: "Australasian Journal of Combinatorics, Vol 88(3), 266–281. 2024."
+    arxiv: "https://arxiv.org/abs/1805.09518"
     paper_pdf: "/assets/publications/2021_ordered_ramsey/paper.pdf"
     selected: n
