@@ -8,6 +8,7 @@ papers:
   - title: "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
     authors: "<b>W Overman</b>, M Bayati"
     venue: "NeurIPS'25: Neural Information Processing Systems. 2025."
+    arxiv_id: 2506.00911
     paper_pdf: "/assets/publications/2025_conformal_arbitrage/paper.pdf"
     selected: y
 
