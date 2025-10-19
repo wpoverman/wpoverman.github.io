@@ -139,6 +139,13 @@ title: Home
               <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
             {% endif %}
 
+            <!-- inside each .paper .paper-buttons block, add this just after "Paper" -->
+            {% if paper.arxiv %}
+              <a class="button" href="{{ paper.arxiv }}" target="_blank">ArXiv</a>
+            {% elsif paper.arxiv_id %}
+              <a class="button" href="https://arxiv.org/abs/{{ paper.arxiv_id }}" target="_blank">ArXiv</a>
+            {% endif %}
+
           </div>
         </div>
       {% endfor %}
