@@ -15,6 +15,7 @@ papers:
     authors: "S Shirani, Y Luo, <b>W Overman</b>, R Xiong, M Bayati"
     venue: "arXiv'25: arXiv preprint arXiv:2502.01106. 2025.<br> Accepted for Oral Presentation at the Conference on Digital Experimentation @ MIT (CODE@MIT), 2025<br>Accepted for presentation at the MSOM Technology, Innovation, and Entrepreneurship SIG, 2025."
     paper_pdf: "/assets/publications/2025_validate_counterfactual_estimates/paper.pdf"
+    code: "https://github.com/CausalMP/CausalMP"
     selected: y
 
   - title: "On aligning prediction models with clinical experiential learning: A prostate cancer case study"
