@@ -1,6 +1,6 @@
 papers:
 
-  - title: "Ask or Play: AI Control in Markov Games"
+  - title: "The Oversight Game: AI Control in Markov Games"
     authors: "<b>W Overman</b>, M Bayati"
     venue: "Early version in NeurIPS'25 Workshop: ML×OR Workshop. 2025."
     selected: y
