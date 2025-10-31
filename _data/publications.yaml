@@ -1,8 +1,10 @@
 papers:
 
-  - title: "The Oversight Game: AI Control in Markov Games"
+  - title: "The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy"
     authors: "<b>W Overman</b>, M Bayati"
     venue: "Early version in NeurIPS'25 Workshop: ML×OR Workshop. 2025."
+    arxiv: "https://arxiv.org/abs/2510.26752"
+    paper_pdf: "/assets/publications/2025_oversight_game/paper.pdf"
     selected: y
 
   - title: "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
