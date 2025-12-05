@@ -2,7 +2,7 @@ papers:
 
   - title: "The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy"
     authors: "<b>W Overman</b>, M Bayati"
-    venue: "Early version in NeurIPS'25 Workshop: ML×OR Workshop. 2025."
+    venue: "Early version in NeurIPS'25 Workshop: ML×OR Workshop. 2025. (Spotlight Presentation)"
     arxiv: "https://arxiv.org/abs/2510.26752"
     paper_pdf: "/assets/publications/2025_oversight_game/paper.pdf"
     selected: y
