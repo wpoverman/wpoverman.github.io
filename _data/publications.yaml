@@ -1,5 +1,12 @@
 papers:
 
+  - title: "Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems"
+    authors: "<b>W Overman</b>, S Shirani, M Bayati"
+    venue: "arXiv'25: arXiv preprint arXiv:2603.01339. 2026."
+    arxiv: "https://arxiv.org/abs/2603.01339"
+    paper_pdf: "/assets/publications/2026_causal_humanAI/paper.pdf"
+    selected: y
+
   - title: "The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy"
     authors: "<b>W Overman</b>, M Bayati"
     venue: "Early version in NeurIPS'25 Workshop: ML×OR Workshop. 2025. (Spotlight Presentation)"
