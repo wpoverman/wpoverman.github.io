@@ -32,7 +32,7 @@ papers:
     arxiv: "https://arxiv.org/abs/2502.01106"
     paper_pdf: "/assets/publications/2025_validate_counterfactual_estimates/paper.pdf"
     code: "https://github.com/CausalMP/CausalMP"
-    selected: y
+    selected: n
 
   - title: "On aligning prediction models with clinical experiential learning: A prostate cancer case study"
     authors: "JJ Vallon, <b>W Overman</b>, W Xu, N Panjwani, X Ling, S Vij, HP Bagshaw, ..."
@@ -91,7 +91,7 @@ papers:
     arxiv: "https://arxiv.org/abs/2110.10614"
     paper_pdf: "/assets/publications/2022_independent_natural/paper.pdf"
     code: "https://github.com/wpoverman/MPG"
-    selected: y
+    selected: n
 
   - title: "Some Ordered Ramsey Numbers of Graphs on Four Vertices"
     authors: "<b>W Overman</b>, JF Alm, K Coffey, C Langhoff"
