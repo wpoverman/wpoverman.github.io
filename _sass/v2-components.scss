@@ -1,0 +1,56 @@
+// V2 components
+
+// Links
+a.v2-link {
+  color: $v2-accent;
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $v2-accent-deep;
+  }
+
+  &:focus {
+    outline: 2px solid $v2-accent;
+    outline-offset: 2px;
+  }
+}
+
+// Masthead
+.v2-masthead {
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid $v2-rule;
+}
+
+.v2-masthead__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.v2-masthead__wordmark {
+  font-size: 1.25rem;
+  color: $v2-text;
+  text-decoration: none;
+}
+
+.v2-masthead__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+// Colophon
+.v2-colophon {
+  padding: 2rem 0;
+  border-top: 0.5px solid $v2-rule;
+  margin-top: 2rem;
+}
+
+.v2-colophon__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
