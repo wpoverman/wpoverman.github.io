@@ -1,0 +1,92 @@
+---
+layout: v2-default
+title: Papers — Overman
+---
+
+{% assign papers = site.data.v2.publications | sort: "year" | reverse %}
+{% assign years = papers | map: "year" | uniq %}
+
+<section class="v2-section v2-papers-header">
+  <div class="v2-section__row">
+    <span class="v2-mono-label">Papers</span>
+    <h1 class="v2-display" style="font-size: 2rem; margin: 0;">Publications</h1>
+  </div>
+
+  <div class="v2-filter-pills" role="radiogroup" aria-label="Filter papers by topic">
+    <button class="v2-pill v2-pill--active" data-filter="all">All</button>
+    <button class="v2-pill" data-filter="AI Safety">AI Safety</button>
+    <button class="v2-pill" data-filter="Conformal">Conformal</button>
+    <button class="v2-pill" data-filter="RL">RL</button>
+    <button class="v2-pill" data-filter="Causal">Causal</button>
+    <button class="v2-pill" data-filter="Other">Other</button>
+  </div>
+</section>
+
+{% for year in years %}
+<section class="v2-section v2-papers__year-group" data-year="{{ year }}">
+  <h2 class="v2-mono-label v2-papers__year">{{ year }}</h2>
+
+  {% for paper in papers %}
+  {% if paper.year == year %}
+  <article class="v2-papers__row" data-tags="{{ paper.tags | join: ',' }}">
+    <div class="v2-papers__date v2-mono">
+      {{ paper.year }}.{{ paper.month | prepend: '00' | slice: -2, 2 }}
+    </div>
+
+    <div class="v2-papers__info">
+      <span class="v2-papers__title">{{ paper.title }}</span>
+      <span class="v2-papers__authors">{{ paper.authors }}</span>
+      <span class="v2-papers__venue">{{ paper.venue }}{% if paper.venue_note %} · {{ paper.venue_note }}{% endif %}</span>
+    </div>
+
+    <div class="v2-papers__links">
+      {% if paper.paper_url %}
+        <a href="{{ paper.paper_url }}" class="v2-link v2-mono-label">pdf</a>
+      {% endif %}
+      {% if paper.arxiv_url %}
+        <a href="{{ paper.arxiv_url }}" class="v2-link v2-mono-label">arxiv</a>
+      {% endif %}
+      {% if paper.code_url %}
+        <a href="{{ paper.code_url }}" class="v2-link v2-mono-label">code</a>
+      {% endif %}
+      {% if paper.guide_slug %}
+        <a href="{{ '/v2/papers/' | append: paper.guide_slug | append: '/' | relative_url }}" class="v2-link v2-mono-label">guide</a>
+      {% endif %}
+    </div>
+  </article>
+  {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+<script>
+(function () {
+  var pills = document.querySelectorAll('.v2-pill');
+  var rows = document.querySelectorAll('.v2-papers__row');
+  var groups = document.querySelectorAll('.v2-papers__year-group');
+
+  pills.forEach(function (pill) {
+    pill.addEventListener('click', function () {
+      var filter = this.getAttribute('data-filter');
+
+      pills.forEach(function (p) { p.classList.remove('v2-pill--active'); });
+      this.classList.add('v2-pill--active');
+
+      rows.forEach(function (row) {
+        if (filter === 'all') {
+          row.style.display = '';
+        } else {
+          var tags = row.getAttribute('data-tags').split(',');
+          row.style.display = tags.indexOf(filter) !== -1 ? '' : 'none';
+        }
+      });
+
+      // Hide year groups with no visible papers
+      groups.forEach(function (group) {
+        var visible = group.querySelectorAll('.v2-papers__row:not([style*="display: none"])');
+        group.style.display = visible.length ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>

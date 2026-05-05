@@ -42,6 +42,107 @@ a.v2-link {
   gap: 1.5rem;
 }
 
+// Filter pills
+.v2-filter-pills {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.v2-pill {
+  font-family: $v2-font-mono;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.75rem;
+  border: 0.5px solid $v2-rule;
+  border-radius: 2px;
+  background: transparent;
+  color: $v2-muted;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: $v2-accent;
+    border-color: $v2-accent;
+  }
+
+  &:focus {
+    outline: 2px solid $v2-accent;
+    outline-offset: 2px;
+  }
+
+  &--active {
+    color: #fff;
+    background: $v2-accent;
+    border-color: $v2-accent;
+  }
+}
+
+// Papers
+.v2-papers-header .v2-section__row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.v2-papers__year {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.8rem;
+}
+
+.v2-papers__row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-top: 0.5px solid $v2-rule;
+}
+
+.v2-papers__date {
+  font-size: 0.8rem;
+  color: $v2-muted;
+  white-space: nowrap;
+}
+
+.v2-papers__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.v2-papers__title {
+  font-family: $v2-font-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $v2-text;
+  transition: all 0.15s ease;
+}
+
+.v2-papers__row:hover .v2-papers__title {
+  color: $v2-accent;
+  font-style: italic;
+}
+
+.v2-papers__authors {
+  font-size: 0.85rem;
+  color: $v2-muted;
+}
+
+.v2-papers__venue {
+  font-size: 0.8rem;
+  color: $v2-muted;
+  font-style: italic;
+}
+
+.v2-papers__links {
+  display: flex;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+
 // Colophon
 .v2-colophon {
   padding: 2rem 0;
