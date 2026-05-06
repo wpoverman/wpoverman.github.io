@@ -280,10 +280,12 @@ a.v2-link {
   font-size: 1rem;
   font-weight: 400;
   color: $v2-text;
+  text-decoration: none;
   transition: all 0.15s ease;
 }
 
-.v2-papers__row:hover .v2-papers__title {
+.v2-papers__row:hover .v2-papers__title,
+a.v2-papers__title:hover {
   color: $v2-accent;
   font-style: italic;
 }

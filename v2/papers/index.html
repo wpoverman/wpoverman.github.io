@@ -34,23 +34,17 @@ title: Papers — Overman
     </div>
 
     <div class="v2-papers__info">
-      <span class="v2-papers__title">{{ paper.title }}</span>
+      <a href="{{ paper.arxiv_url | default: '#' }}" class="v2-papers__title">{{ paper.title }}</a>
       <span class="v2-papers__authors">{{ paper.authors }}</span>
       <span class="v2-papers__venue">{{ paper.venue }}{% if paper.venue_note %} · {{ paper.venue_note }}{% endif %}</span>
     </div>
 
     <div class="v2-papers__links">
-      {% if paper.paper_url %}
-        <a href="{{ paper.paper_url }}" class="v2-link v2-mono-label">pdf</a>
-      {% endif %}
       {% if paper.arxiv_url %}
         <a href="{{ paper.arxiv_url }}" class="v2-link v2-mono-label">arxiv</a>
       {% endif %}
-      {% if paper.code_url %}
-        <a href="{{ paper.code_url }}" class="v2-link v2-mono-label">code</a>
-      {% endif %}
       {% if paper.guide_slug %}
-        <a href="{{ '/v2/papers/' | append: paper.guide_slug | append: '/' | relative_url }}" class="v2-link v2-mono-label">guide</a>
+        <a href="{{ '/v2/papers/' | append: paper.guide_slug | append: '/' | relative_url }}" class="v2-link v2-mono-label">notes</a>
       {% endif %}
     </div>
   </article>
