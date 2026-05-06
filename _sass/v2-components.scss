@@ -42,6 +42,169 @@ a.v2-link {
   gap: 1.5rem;
 }
 
+// Section numbering (shared layout for numbered sections)
+.v2-section__numbered {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1rem;
+}
+
+// Location strip
+.v2-location-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.5px solid $v2-rule;
+}
+
+.v2-location-strip__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.v2-location-strip__value {
+  font-size: 0.85rem;
+  color: $v2-text;
+}
+
+// Hero
+.v2-hero {
+  border-top: none;
+}
+
+.v2-hero__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.v2-hero__name {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0.5rem 0 0 0;
+
+  em {
+    font-style: italic;
+  }
+}
+
+.v2-hero__dot {
+  color: $v2-accent;
+}
+
+.v2-hero__credentials {
+  font-size: 0.8rem;
+  color: $v2-muted;
+  margin: 0.75rem 0 0 0;
+  letter-spacing: 0.04em;
+}
+
+.v2-hero__tagline {
+  font-family: $v2-font-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 38ch;
+  margin: 0.75rem 0 0 0;
+  line-height: 1.5;
+}
+
+.v2-hero__links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.v2-hero__portrait {
+  position: relative;
+}
+
+.v2-hero__portrait-placeholder {
+  aspect-ratio: 4 / 5;
+  background: #EDE8DA;
+  border: 0.5px solid $v2-rule;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v2-hero__portrait-meta {
+  padding: 0.5rem 0;
+  color: $v2-muted;
+  font-size: 0.7rem;
+}
+
+// Bio
+.v2-bio__lede {
+  font-family: $v2-font-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.v2-bio__detail {
+  font-size: 0.95rem;
+  color: $v2-muted;
+  line-height: 1.6;
+  margin: 0;
+}
+
+// Reading
+.v2-reading__books {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.v2-reading__book {
+  display: flex;
+  gap: 1rem;
+}
+
+.v2-reading__cover {
+  width: 60px;
+  height: 85px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  span {
+    font-family: $v2-font-mono;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.1em;
+  }
+}
+
+.v2-reading__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.v2-reading__title {
+  font-family: $v2-font-serif;
+  font-size: 0.95rem;
+}
+
+.v2-reading__author {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: $v2-muted;
+}
+
+.v2-reading__note {
+  font-size: 0.8rem;
+  color: $v2-muted;
+  margin-top: 0.25rem;
+}
+
+// Selected work (reuses .v2-papers__row styles)
+
 // Filter pills
 .v2-filter-pills {
   display: flex;

@@ -3,6 +3,184 @@ layout: v2-home
 title: Overman
 ---
 
-<section class="v2-section">
-  <p>Home page — content coming in later phases.</p>
+{% assign loc = site.data.v2.location %}
+{% assign pubs = site.data.v2.publications | where: "selected", true | sort: "year" | reverse %}
+{% assign books = site.data.v2.reading | slice: 0, 2 %}
+{% assign posts = site.posts | where: "layout", "v2-post" | slice: 0, 3 %}
+
+<!-- Location strip -->
+<div class="v2-location-strip">
+  <div class="v2-location-strip__cell">
+    <span class="v2-mono-label">Location</span>
+    <span class="v2-mono v2-location-strip__value">{{ loc.city }}</span>
+  </div>
+  <div class="v2-location-strip__cell">
+    <span class="v2-mono-label">Local time</span>
+    <span class="v2-mono v2-location-strip__value" id="v2-clock">--:--</span>
+  </div>
+  <div class="v2-location-strip__cell">
+    <span class="v2-mono-label">Weather</span>
+    <span class="v2-mono v2-location-strip__value" id="v2-weather">--</span>
+  </div>
+  <div class="v2-location-strip__cell">
+    <span class="v2-mono-label">Since {{ loc.since }}</span>
+    <span class="v2-mono v2-location-strip__value">{{ loc.context }}</span>
+  </div>
+</div>
+
+<!-- §001 Hero -->
+<section class="v2-section v2-hero">
+  <div class="v2-hero__grid">
+    <div class="v2-hero__left">
+      <span class="v2-mono-label">001</span>
+      <h1 class="v2-hero__name v2-display">
+        William <em>Overman</em><span class="v2-hero__dot">.</span>
+      </h1>
+      <p class="v2-hero__credentials v2-mono">PhD candidate · Stanford MS&amp;E</p>
+      <p class="v2-hero__tagline">
+        Building the theory of safe, autonomous AI systems that know when to ask for help.
+      </p>
+      <div class="v2-hero__links">
+        <a href="{{ site.data.main_info.google_scholar }}" class="v2-link v2-mono-label">scholar</a>
+        <a href="{{ site.data.main_info.github }}" class="v2-link v2-mono-label">github</a>
+        <a href="https://arxiv.org/search/?query=william+overman&searchtype=author" class="v2-link v2-mono-label">arxiv</a>
+        <a href="#" class="v2-link v2-mono-label">cv.pdf</a>
+        <a href="mailto:{{ site.data.main_info.email }}" class="v2-link v2-mono-label">email</a>
+      </div>
+    </div>
+    <div class="v2-hero__right">
+      <div class="v2-hero__portrait">
+        <div class="v2-hero__portrait-placeholder">
+          <span class="v2-mono-label">Plate I</span>
+        </div>
+        <div class="v2-hero__portrait-meta v2-mono-label">
+          Stanford, CA · 2026
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- §002 Bio -->
+<section class="v2-section v2-bio">
+  <div class="v2-section__numbered">
+    <span class="v2-mono-label">002</span>
+    <div class="v2-bio__content">
+      <p class="v2-bio__lede">
+        I study how to make AI systems that are both safe and useful — calibrating the tension between autonomy and oversight using tools from conformal prediction, game theory, and causal inference.
+      </p>
+      <p class="v2-bio__detail">
+        Advised by Mohsen Bayati at Stanford. Previously at Illinois and UCI. My work has appeared at ICML, NeurIPS, ICLR, and AISTATS. I'm interested in the question of how much freedom to give an AI agent, and how to answer that question rigorously.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- §003 Reading -->
+<section class="v2-section v2-reading">
+  <div class="v2-section__numbered">
+    <span class="v2-mono-label">003</span>
+    <div class="v2-reading__content">
+      <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Currently reading</h2>
+      <div class="v2-reading__books">
+        {% for book in books %}
+        <div class="v2-reading__book">
+          <div class="v2-reading__cover" style="background: {{ book.cover_color }};">
+            <span>{{ book.cover_text }}</span>
+          </div>
+          <div class="v2-reading__info">
+            <span class="v2-reading__title">{{ book.title }}</span>
+            <span class="v2-reading__author">{{ book.author }}</span>
+            <span class="v2-reading__note">{{ book.note }}</span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <a href="#" class="v2-link v2-mono-label" style="margin-top: 1rem; display: inline-block;">all reading ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- §004 Selected work -->
+<section class="v2-section v2-selected-work">
+  <div class="v2-section__numbered">
+    <span class="v2-mono-label">004</span>
+    <div class="v2-selected-work__content">
+      <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Selected work</h2>
+      {% for paper in pubs limit: 5 %}
+      <article class="v2-papers__row">
+        <div class="v2-papers__date v2-mono">
+          {{ paper.year }}.{{ paper.month | prepend: '00' | slice: -2, 2 }}
+        </div>
+        <div class="v2-papers__info">
+          <span class="v2-papers__title">{{ paper.title }}</span>
+          <span class="v2-papers__authors">{{ paper.authors }}</span>
+          <span class="v2-papers__venue">{{ paper.venue }}</span>
+        </div>
+        <div class="v2-papers__links">
+          {% if paper.paper_url %}
+            <a href="{{ paper.paper_url }}" class="v2-link v2-mono-label">pdf</a>
+          {% endif %}
+          {% if paper.arxiv_url %}
+            <a href="{{ paper.arxiv_url }}" class="v2-link v2-mono-label">arxiv</a>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+      <a href="{{ '/v2/papers/' | relative_url }}" class="v2-link v2-mono-label" style="margin-top: 1rem; display: inline-block;">all {{ site.data.v2.publications | size }} papers ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- §005 Notes -->
+<section class="v2-section v2-recent-notes">
+  <div class="v2-section__numbered">
+    <span class="v2-mono-label">005</span>
+    <div class="v2-recent-notes__content">
+      <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Recent notes</h2>
+      {% for post in posts %}
+      <article class="v2-notes__row">
+        <div class="v2-notes__date v2-mono">
+          {{ post.date | date: "%Y.%m" }}
+        </div>
+        <div class="v2-notes__info">
+          <a href="{{ post.url | relative_url }}" class="v2-notes__title">{{ post.title }}</a>
+        </div>
+        <span class="v2-notes__category v2-mono-label">{{ post.category }}</span>
+        <a href="{{ post.url | relative_url }}" class="v2-link v2-mono-label">read</a>
+      </article>
+      {% endfor %}
+      <a href="{{ '/v2/notes/' | relative_url }}" class="v2-link v2-mono-label" style="margin-top: 1rem; display: inline-block;">archive ↗</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  // Live clock
+  var tz = {{ loc.tz | jsonify }};
+  var clockEl = document.getElementById('v2-clock');
+  function tick() {
+    var now = new Date();
+    clockEl.textContent = now.toLocaleTimeString('en-US', {
+      timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: false
+    });
+  }
+  tick();
+  setInterval(tick, 30000);
+
+  // Weather from Open-Meteo
+  var lat = {{ loc.lat }};
+  var lon = {{ loc.lon }};
+  var weatherEl = document.getElementById('v2-weather');
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon + '&current_weather=true&temperature_unit=fahrenheit')
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      var w = d.current_weather;
+      weatherEl.textContent = Math.round(w.temperature) + '°F';
+    })
+    .catch(function () {
+      weatherEl.textContent = '--';
+    });
+})();
+</script>

@@ -1,0 +1,8 @@
+- label: Index
+  url: /v2/
+- label: Papers
+  url: /v2/papers/
+- label: Notes
+  url: /v2/notes/
+- label: CV
+  url: "#"
