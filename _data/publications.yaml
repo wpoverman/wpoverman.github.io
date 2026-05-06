@@ -14,7 +14,7 @@ papers:
   
   - title: "Annealed Softmax Greedy in Many-Armed Bayesian Bandits"
     authors: "<b>W Overman</b>, M Bayati"
-    venue: "RLC 2026 (Reinforcement Learning Conference)."
+    venue: "RLC 2026: Reinforcement Learning Conference 2026."
     selected: y
 
   - title: "Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems"
