@@ -68,7 +68,7 @@ title: Overman
           {{ paper.year }}.{{ paper.month | prepend: '00' | slice: -2, 2 }}
         </div>
         <div class="v2-papers__info">
-          <a href="{{ paper.arxiv_url | default: '#' }}" class="v2-papers__title">{{ paper.title }}</a>
+          <a href="{{ paper.arxiv_url | default: '#' }}" class="v2-papers__title">{{ paper.title_short | default: paper.title }}</a>
           <span class="v2-papers__authors">{{ paper.authors }}</span>
           <span class="v2-papers__venue">{{ paper.venue }}</span>
         </div>

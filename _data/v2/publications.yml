@@ -16,6 +16,7 @@
   selected: true
 
 - title: "The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy"
+  title_short: "The Oversight Game:<br>Learning to Cooperatively Balance an AI Agent's Safety and Autonomy"
   authors: "W Overman, M Bayati"
   venue: "ICML 2026"
   venue_note: "Early version: NeurIPS'25 Workshop on ML×OR (Spotlight)"
@@ -77,7 +78,7 @@
 - title: "Can We Validate Counterfactual Estimations in the Presence of General Network Interference?"
   authors: "S Shirani, Y Luo, W Overman, R Xiong, M Bayati"
   venue: "Under review, Management Science"
-  venue_note: "Oral presentation at CODE@MIT 2025; presentation at MSOM TIE SIG 2025"
+  venue_note: "Oral presentation at CODE@MIT 2025"
   year: 2025
   month: 2
   paper_url: "/assets/publications/2025_validate_counterfactual_estimates/paper.pdf"
@@ -121,17 +122,6 @@
   tags: [RL]
   selected: false
 
-- title: "Some Ordered Ramsey Numbers of Graphs on Four Vertices"
-  authors: "W Overman, JF Alm, K Coffey, C Langhoff"
-  venue: "Australasian Journal of Combinatorics, Vol 88(3)"
-  year: 2024
-  month: 1
-  paper_url: "/assets/publications/2021_ordered_ramsey/paper.pdf"
-  arxiv_url: "https://arxiv.org/abs/1805.09518"
-  guide_slug:
-  tags: [Other]
-  selected: false
-
 # --- 2023 ---
 
 - title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
@@ -167,4 +157,17 @@
   arxiv_url: "https://arxiv.org/abs/2110.10614"
   guide_slug:
   tags: [RL]
+  selected: false
+
+# --- 2018 ---
+
+- title: "Some Ordered Ramsey Numbers of Graphs on Four Vertices"
+  authors: "W Overman, JF Alm, K Coffey, C Langhoff"
+  venue: "Australasian Journal of Combinatorics, Vol 88(3)"
+  year: 2018
+  month: 5
+  paper_url: "/assets/publications/2021_ordered_ramsey/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/1805.09518"
+  guide_slug:
+  tags: [Other]
   selected: false
