@@ -8,26 +8,6 @@ title: Overman
 {% assign books = site.data.v2.reading | slice: 0, 2 %}
 {% assign posts = site.posts | where: "layout", "v2-post" | slice: 0, 3 %}
 
-<!-- Location strip -->
-<div class="v2-location-strip">
-  <div class="v2-location-strip__cell">
-    <span class="v2-mono-label">Location</span>
-    <span class="v2-mono v2-location-strip__value">{{ loc.city }}</span>
-  </div>
-  <div class="v2-location-strip__cell">
-    <span class="v2-mono-label">Local time</span>
-    <span class="v2-mono v2-location-strip__value" id="v2-clock">--:--</span>
-  </div>
-  <div class="v2-location-strip__cell">
-    <span class="v2-mono-label">Weather</span>
-    <span class="v2-mono v2-location-strip__value" id="v2-weather">--</span>
-  </div>
-  <div class="v2-location-strip__cell">
-    <span class="v2-mono-label">Since {{ loc.since }}</span>
-    <span class="v2-mono v2-location-strip__value">{{ loc.context }}</span>
-  </div>
-</div>
-
 <!-- §001 Hero -->
 <section class="v2-section v2-hero">
   <div class="v2-hero__grid">
@@ -155,32 +135,47 @@ title: Overman
   </div>
 </section>
 
+{% assign loc = site.data.v2.location %}
 <script>
 (function () {
-  // Live clock
   var tz = {{ loc.tz | jsonify }};
-  var clockEl = document.getElementById('v2-clock');
-  function tick() {
+
+  // Date
+  var dateEl = document.getElementById('v2-meta-date');
+  if (dateEl) {
     var now = new Date();
-    clockEl.textContent = now.toLocaleTimeString('en-US', {
-      timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: false
+    dateEl.textContent = now.toLocaleDateString('en-US', {
+      timeZone: tz, weekday: 'long', year: 'numeric', month: 'long', day: '2-digit'
     });
   }
-  tick();
-  setInterval(tick, 30000);
+
+  // Live clock
+  var clockEl = document.getElementById('v2-clock');
+  if (clockEl) {
+    function tick() {
+      var now = new Date();
+      clockEl.textContent = now.toLocaleTimeString('en-US', {
+        timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: false
+      });
+    }
+    tick();
+    setInterval(tick, 30000);
+  }
 
   // Weather from Open-Meteo
   var lat = {{ loc.lat }};
   var lon = {{ loc.lon }};
   var weatherEl = document.getElementById('v2-weather');
-  fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon + '&current_weather=true&temperature_unit=fahrenheit')
-    .then(function (r) { return r.json(); })
-    .then(function (d) {
-      var w = d.current_weather;
-      weatherEl.textContent = Math.round(w.temperature) + '°F';
-    })
-    .catch(function () {
-      weatherEl.textContent = '--';
-    });
+  if (weatherEl) {
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon + '&current_weather=true&temperature_unit=fahrenheit')
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        var w = d.current_weather;
+        weatherEl.textContent = Math.round(w.temperature) + '°F';
+      })
+      .catch(function () {
+        weatherEl.textContent = '--';
+      });
+  }
 })();
 </script>

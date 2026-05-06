@@ -1,10 +1,21 @@
 <header class="v2-masthead">
   <div class="v2-wrapper">
-    <nav class="v2-masthead__nav">
-      <span class="v2-mono-label">No. 001</span>
+    <div class="v2-masthead__top">
       <a href="{{ '/v2/' | relative_url }}" class="v2-masthead__wordmark v2-display">
         Overman<span style="color: #1B3A6B;">.</span>
       </a>
+
+      {% if page.layout == "v2-home" %}
+      {% assign loc = site.data.v2.location %}
+      <div class="v2-masthead__meta">
+        <span class="v2-mono" id="v2-meta-date"></span>
+        <span class="v2-mono">{{ loc.city }}</span>
+        <span class="v2-mono"><span id="v2-clock">--:--</span> · <span id="v2-weather">--</span></span>
+      </div>
+      {% endif %}
+    </div>
+
+    <nav class="v2-masthead__nav">
       <ul class="v2-masthead__links">
         <li><a href="{{ '/v2/' | relative_url }}" class="v2-link">Index</a></li>
         <li><a href="{{ '/v2/papers/' | relative_url }}" class="v2-link">Papers</a></li>
