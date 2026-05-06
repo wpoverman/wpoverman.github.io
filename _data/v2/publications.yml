@@ -1,6 +1,8 @@
 # V2 publications data
-# Schema: title, authors, venue, year, month, paper_url, arxiv_url,
-#         code_url, guide_slug, tags[], selected
+# Ordered by display priority: year desc, then month desc within year.
+# Templates iterate in this order — do not re-sort.
+
+# --- 2026 ---
 
 - title: "Calibrating Conservatism for Scalable Oversight"
   authors: "W Overman, M Bayati"
@@ -9,7 +11,6 @@
   month: 7
   paper_url:
   arxiv_url:
-  code_url:
   guide_slug:
   tags: [AI Safety]
   selected: true
@@ -22,7 +23,6 @@
   month: 7
   paper_url: "/assets/publications/2025_oversight_game/paper.pdf"
   arxiv_url: "https://arxiv.org/abs/2510.26752"
-  code_url:
   guide_slug: "oversight-game"
   tags: [AI Safety, RL]
   selected: true
@@ -34,10 +34,11 @@
   month: 3
   paper_url: "/assets/publications/2026_causal_humanAI/paper.pdf"
   arxiv_url: "https://arxiv.org/abs/2603.01339"
-  code_url:
   guide_slug:
   tags: [Causal]
   selected: true
+
+# --- 2025 ---
 
 - title: "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
   authors: "W Overman, M Bayati"
@@ -46,22 +47,19 @@
   month: 12
   paper_url: "/assets/publications/2025_conformal_arbitrage/paper.pdf"
   arxiv_url: "https://arxiv.org/abs/2506.00911"
-  code_url:
   guide_slug:
   tags: [Conformal, AI Safety]
   selected: true
 
-- title: "Can We Validate Counterfactual Estimations in the Presence of General Network Interference?"
-  authors: "S Shirani, Y Luo, W Overman, R Xiong, M Bayati"
-  venue: "Under review, Management Science"
-  venue_note: "Oral presentation at CODE@MIT 2025; presentation at MSOM TIE SIG 2025"
+- title: "On Aligning Prediction Models with Clinical Experiential Learning: A Prostate Cancer Case Study"
+  authors: "JJ Vallon, W Overman, W Xu, N Panjwani, X Ling, S Vij, HP Bagshaw, et al."
+  venue: "arXiv preprint"
   year: 2025
-  month: 2
-  paper_url: "/assets/publications/2025_validate_counterfactual_estimates/paper.pdf"
-  arxiv_url: "https://arxiv.org/abs/2502.01106"
-  code_url: "https://github.com/CausalMP/CausalMP"
+  month: 9
+  paper_url: "/assets/publications/2025_aligning_clinical/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2509.04053"
   guide_slug:
-  tags: [Causal]
+  tags: [Conformal]
   selected: false
 
 - title: "Improved Regret Bound for Safe Reinforcement Learning via Tighter Cost Pessimism and Reward Optimism"
@@ -72,22 +70,23 @@
   month: 8
   paper_url: "/assets/publications/2025_cost_pessimism/paper.pdf"
   arxiv_url: "https://arxiv.org/abs/2410.10158"
-  code_url:
   guide_slug:
   tags: [RL]
   selected: false
 
-- title: "On Aligning Prediction Models with Clinical Experiential Learning: A Prostate Cancer Case Study"
-  authors: "JJ Vallon, W Overman, W Xu, N Panjwani, X Ling, S Vij, HP Bagshaw, et al."
-  venue: "arXiv preprint"
+- title: "Can We Validate Counterfactual Estimations in the Presence of General Network Interference?"
+  authors: "S Shirani, Y Luo, W Overman, R Xiong, M Bayati"
+  venue: "Under review, Management Science"
+  venue_note: "Oral presentation at CODE@MIT 2025; presentation at MSOM TIE SIG 2025"
   year: 2025
-  month: 9
-  paper_url: "/assets/publications/2025_aligning_clinical/paper.pdf"
-  arxiv_url: "https://arxiv.org/abs/2509.04053"
-  code_url:
+  month: 2
+  paper_url: "/assets/publications/2025_validate_counterfactual_estimates/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2502.01106"
   guide_slug:
-  tags: [Conformal]
+  tags: [Causal]
   selected: false
+
+# --- 2024 ---
 
 - title: "Aligning Model Properties via Conformal Risk Control"
   authors: "W Overman, JJ Vallon, M Bayati"
@@ -96,7 +95,6 @@
   month: 12
   paper_url: "/assets/publications/2024_aligning_properties/paper.pdf"
   arxiv_url: "https://arxiv.org/abs/2406.18777"
-  code_url:
   guide_slug:
   tags: [Conformal]
   selected: true
@@ -108,7 +106,6 @@
   month: 12
   paper_url: "/assets/publications/2024_higher_order/paper.pdf"
   arxiv_url: "https://arxiv.org/abs/2411.00945"
-  code_url: "https://github.com/CausalMP/CausalMP"
   guide_slug:
   tags: [Causal]
   selected: true
@@ -120,43 +117,6 @@
   month: 5
   paper_url: "/assets/publications/2024_beating_price/paper.pdf"
   arxiv_url: "https://proceedings.iclr.cc/paper_files/paper/2024/hash/921ac785fa9edc73cacaf2664f43d234-Abstract-Conference.html"
-  code_url:
-  guide_slug:
-  tags: [RL]
-  selected: false
-
-- title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
-  authors: "SH Kim, W Overman, J Pauphilet, WC Cha"
-  venue: "Major revision, Manufacturing & Service Operations Management"
-  year: 2023
-  month: 7
-  paper_url: "/assets/publications/2023_occupancy_prediction/paper.pdf"
-  arxiv_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523116"
-  code_url:
-  guide_slug:
-  tags: [Other]
-  selected: false
-
-- title: "Global Convergence of Multi-Agent Policy Gradient in Markov Potential Games"
-  authors: "S Leonardos, W Overman, I Panageas, G Piliouras"
-  venue: "ICLR 2022"
-  year: 2022
-  month: 4
-  paper_url: "/assets/publications/2022_global_convergence/paper.pdf"
-  arxiv_url: "https://arxiv.org/abs/2106.01969"
-  code_url: "https://github.com/wpoverman/MPG"
-  guide_slug:
-  tags: [RL]
-  selected: true
-
-- title: "Independent Natural Policy Gradient Always Converges in Markov Potential Games"
-  authors: "R Fox, SM McAleer, W Overman, I Panageas"
-  venue: "AISTATS 2022"
-  year: 2022
-  month: 3
-  paper_url: "/assets/publications/2022_independent_natural/paper.pdf"
-  arxiv_url: "https://arxiv.org/abs/2110.10614"
-  code_url: "https://github.com/wpoverman/MPG"
   guide_slug:
   tags: [RL]
   selected: false
@@ -168,7 +128,43 @@
   month: 1
   paper_url: "/assets/publications/2021_ordered_ramsey/paper.pdf"
   arxiv_url: "https://arxiv.org/abs/1805.09518"
-  code_url:
   guide_slug:
   tags: [Other]
+  selected: false
+
+# --- 2023 ---
+
+- title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
+  authors: "SH Kim, W Overman, J Pauphilet, WC Cha"
+  venue: "Major revision, Manufacturing & Service Operations Management"
+  year: 2023
+  month: 7
+  paper_url: "/assets/publications/2023_occupancy_prediction/paper.pdf"
+  arxiv_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523116"
+  guide_slug:
+  tags: [Other]
+  selected: false
+
+# --- 2022 ---
+
+- title: "Global Convergence of Multi-Agent Policy Gradient in Markov Potential Games"
+  authors: "S Leonardos, W Overman, I Panageas, G Piliouras"
+  venue: "ICLR 2022"
+  year: 2022
+  month: 4
+  paper_url: "/assets/publications/2022_global_convergence/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2106.01969"
+  guide_slug:
+  tags: [RL]
+  selected: true
+
+- title: "Independent Natural Policy Gradient Always Converges in Markov Potential Games"
+  authors: "R Fox, SM McAleer, W Overman, I Panageas"
+  venue: "AISTATS 2022"
+  year: 2022
+  month: 3
+  paper_url: "/assets/publications/2022_independent_natural/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2110.10614"
+  guide_slug:
+  tags: [RL]
   selected: false

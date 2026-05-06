@@ -3,7 +3,7 @@ layout: v2-default
 title: Papers — Overman
 ---
 
-{% assign papers = site.data.v2.publications | sort: "year" | reverse %}
+{% assign papers = site.data.v2.publications %}
 {% assign years = papers | map: "year" | uniq %}
 
 <section class="v2-section v2-papers-header">
