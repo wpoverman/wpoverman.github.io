@@ -7,7 +7,7 @@ a.v2-link {
   transition: color 0.15s ease;
 
   &:hover {
-    color: $v2-accent-deep;
+    color: $v2-accent-hover;
   }
 
   &:focus {
@@ -399,7 +399,7 @@ a.v2-papers__title:hover {
     text-underline-offset: 2px;
     transition: color 0.15s ease;
 
-    &:hover { color: $v2-accent-deep; }
+    &:hover { color: $v2-accent-hover; }
   }
 
   ol, ul {
