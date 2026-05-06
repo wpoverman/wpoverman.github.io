@@ -11,6 +11,11 @@ papers:
     arxiv: "https://arxiv.org/abs/2510.26752"
     paper_pdf: "/assets/publications/2025_oversight_game/paper.pdf"
     selected: y
+  
+  - title: "Annealed Softmax Greedy in Many-Armed Bayesian Bandits"
+    authors: "<b>W Overman</b>, M Bayati"
+    venue: "RLC 2026 (Reinforcement Learning Conference).<br>Journal version: Reinforcement Learning Journal (2026)."
+    selected: y
 
   - title: "Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems"
     authors: "<b>W Overman</b>, S Shirani, M Bayati"
