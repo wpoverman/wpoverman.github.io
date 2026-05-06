@@ -286,7 +286,7 @@ a.v2-link {
 
 .v2-papers__row:hover .v2-papers__title,
 a.v2-papers__title:hover {
-  color: $v2-accent;
+  color: $v2-accent-hover;
   font-style: italic;
 }
 
@@ -343,7 +343,7 @@ a.v2-papers__title:hover {
   transition: all 0.15s ease;
 
   &:hover {
-    color: $v2-accent;
+    color: $v2-accent-hover;
     font-style: italic;
   }
 }
