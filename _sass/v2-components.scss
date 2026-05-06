@@ -143,6 +143,165 @@ a.v2-link {
   white-space: nowrap;
 }
 
+// Notes index
+.v2-notes-header .v2-section__row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.v2-notes__year {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.8rem;
+}
+
+.v2-notes__row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto auto;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-top: 0.5px solid $v2-rule;
+}
+
+.v2-notes__date {
+  font-size: 0.8rem;
+  color: $v2-muted;
+  white-space: nowrap;
+}
+
+.v2-notes__title {
+  font-family: $v2-font-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $v2-text;
+  text-decoration: none;
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: $v2-accent;
+    font-style: italic;
+  }
+}
+
+.v2-notes__category {
+  color: $v2-muted;
+}
+
+// Post
+.v2-post__header {
+  padding: 2rem 0;
+  border-bottom: 0.5px solid $v2-rule;
+}
+
+.v2-post__meta {
+  margin-top: 1.5rem;
+}
+
+.v2-post__title {
+  font-size: 2rem;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.2;
+}
+
+.v2-post__subtitle {
+  font-family: $v2-font-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: $v2-muted;
+  margin: 0.5rem 0 0 0;
+}
+
+.v2-post__body {
+  max-width: 65ch;
+  padding: 2rem 0;
+
+  h2, h3, h4 {
+    font-family: $v2-font-serif;
+    font-weight: 500;
+    margin: 2rem 0 0.75rem 0;
+  }
+
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+
+  p {
+    margin: 0 0 1rem 0;
+  }
+
+  a {
+    color: $v2-accent;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.15s ease;
+
+    &:hover { color: $v2-accent-deep; }
+  }
+
+  ol, ul {
+    padding-left: 1.25rem;
+    margin: 0 0 1rem 0;
+  }
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+
+  blockquote {
+    margin: 1.5rem 0;
+    padding: 0 0 0 1.25rem;
+    border-left: 3px solid $v2-accent;
+    font-style: italic;
+    color: $v2-muted;
+  }
+
+  code {
+    font-family: $v2-font-mono;
+    font-size: 0.85em;
+    background: #EDE8DA;
+    padding: 0.15em 0.35em;
+    border-radius: 2px;
+  }
+
+  pre {
+    background: #EDE8DA;
+    padding: 1.25rem;
+    overflow-x: auto;
+    margin: 1.25rem 0;
+    border-radius: 2px;
+
+    code {
+      padding: 0;
+      background: none;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+  }
+}
+
+.v2-post__footer {
+  border-top: 0.5px solid $v2-rule;
+  padding: 1.5rem 0;
+}
+
+.v2-post__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.v2-post__nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-decoration: none;
+  max-width: 45%;
+
+  &--next {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
 // Colophon
 .v2-colophon {
   padding: 2rem 0;

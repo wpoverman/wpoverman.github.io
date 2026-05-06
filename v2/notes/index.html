@@ -1,0 +1,86 @@
+---
+layout: v2-default
+title: Notes — Overman
+---
+
+{% assign posts = site.posts | where: "layout", "v2-post" %}
+
+{% comment %}Build unique years list from post dates{% endcomment %}
+{% assign year_list = "" %}
+{% for post in posts %}
+  {% assign y = post.date | date: "%Y" %}
+  {% unless year_list contains y %}
+    {% if year_list == "" %}{% assign year_list = y %}{% else %}{% assign year_list = year_list | append: "," | append: y %}{% endif %}
+  {% endunless %}
+{% endfor %}
+{% assign years = year_list | split: "," %}
+
+<section class="v2-section v2-notes-header">
+  <div class="v2-section__row">
+    <span class="v2-mono-label">Notes</span>
+    <h1 class="v2-display" style="font-size: 2rem; margin: 0;">Archive</h1>
+  </div>
+
+  <div class="v2-filter-pills" role="radiogroup" aria-label="Filter notes by category">
+    <button class="v2-pill v2-pill--active" data-filter="all">All</button>
+    <button class="v2-pill" data-filter="Research">Research</button>
+    <button class="v2-pill" data-filter="Book review">Book review</button>
+    <button class="v2-pill" data-filter="Essay">Essay</button>
+    <button class="v2-pill" data-filter="Technical">Technical</button>
+  </div>
+</section>
+
+{% for year in years %}
+<section class="v2-section v2-notes__year-group" data-year="{{ year }}">
+  <h2 class="v2-mono-label v2-notes__year">{{ year }}</h2>
+
+  {% for post in posts %}
+  {% assign post_year = post.date | date: "%Y" %}
+  {% if post_year == year %}
+  <article class="v2-notes__row" data-category="{{ post.category }}">
+    <div class="v2-notes__date v2-mono">
+      {{ post.date | date: "%Y.%m" }}
+    </div>
+
+    <div class="v2-notes__info">
+      <a href="{{ post.url | relative_url }}" class="v2-notes__title">{{ post.title }}</a>
+    </div>
+
+    <span class="v2-notes__category v2-mono-label">{{ post.category }}</span>
+
+    <a href="{{ post.url | relative_url }}" class="v2-link v2-mono-label">read</a>
+  </article>
+  {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+<script>
+(function () {
+  var pills = document.querySelectorAll('.v2-pill');
+  var rows = document.querySelectorAll('.v2-notes__row');
+  var groups = document.querySelectorAll('.v2-notes__year-group');
+
+  pills.forEach(function (pill) {
+    pill.addEventListener('click', function () {
+      var filter = this.getAttribute('data-filter');
+
+      pills.forEach(function (p) { p.classList.remove('v2-pill--active'); });
+      this.classList.add('v2-pill--active');
+
+      rows.forEach(function (row) {
+        if (filter === 'all') {
+          row.style.display = '';
+        } else {
+          row.style.display = row.getAttribute('data-category') === filter ? '' : 'none';
+        }
+      });
+
+      groups.forEach(function (group) {
+        var visible = group.querySelectorAll('.v2-notes__row:not([style*="display: none"])');
+        group.style.display = visible.length ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
