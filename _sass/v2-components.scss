@@ -180,9 +180,30 @@ a.v2-link {
   }
 }
 
-.v2-hero__index {
+.v2-hero__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: end;
   margin-top: 3rem;
 }
+
+.v2-hero__portrait-placeholder {
+  aspect-ratio: 4 / 5;
+  background: #EDE8DA;
+  border: 0.5px solid $v2-rule;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v2-hero__portrait-meta {
+  padding: 0.5rem 0;
+  color: $v2-muted;
+  font-size: 0.7rem;
+}
+
+.v2-hero__index {}
 
 .v2-hero__links {
   list-style: none;
