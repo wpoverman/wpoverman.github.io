@@ -94,7 +94,7 @@ a.v2-link {
 // Top row: photo left, name right
 .v2-hero__top {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 3fr;
   gap: 2.5rem;
   margin-left: 2.5rem;
   align-items: end;
@@ -102,7 +102,7 @@ a.v2-link {
 
 .v2-hero__portrait-img {
   width: 100%;
-  aspect-ratio: 3 / 3.5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
   border: 0.5px solid $v2-rule;
@@ -116,7 +116,7 @@ a.v2-link {
 
 .v2-hero__firstname {
   display: block;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   line-height: 0.95;
 }
 
@@ -145,7 +145,7 @@ a.v2-link {
 
 .v2-hero__surname {
   display: block;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   line-height: 0.95;
   white-space: nowrap;
 
@@ -157,7 +157,7 @@ a.v2-link {
 // Bottom row: links left (same width as photo), bio right (same width as name)
 .v2-hero__bottom {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 3fr;
   gap: 2.5rem;
   margin-left: 2.5rem;
   margin-top: 1.5rem;
