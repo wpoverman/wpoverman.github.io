@@ -91,53 +91,28 @@ a.v2-link {
   color: $v2-muted;
 }
 
-.v2-hero__body {
+// Top row: photo left, name right
+.v2-hero__top {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 2rem;
+  grid-template-columns: 2fr 3fr;
+  gap: 2.5rem;
   margin-left: 2.5rem;
+  align-items: end;
 }
 
-.v2-hero__left {
+.v2-hero__portrait-placeholder {
+  aspect-ratio: 4 / 5;
+  background: #EDE8DA;
+  border: 0.5px solid $v2-rule;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 480px;
+  align-items: center;
+  justify-content: center;
 }
 
-.v2-hero__subject-text {
-  font-family: $v2-font-serif;
-  font-style: italic;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0.5rem 0 0 0;
+.v2-hero__portrait-meta {
+  padding: 0.5rem 0;
   color: $v2-muted;
-}
-
-.v2-hero__ground {
-  margin-top: auto;
-}
-
-.v2-hero__ground-rule {
-  width: 2.5rem;
-  border-top: 0.5px solid $v2-rule;
-  margin-bottom: 1rem;
-}
-
-.v2-hero__ground-text {
-  font-family: $v2-font-serif;
-  font-style: italic;
-  font-size: 1.15rem;
-  line-height: 1.5;
-  margin: 0.5rem 0 0 0;
-  max-width: 28ch;
-}
-
-.v2-hero__ground-bio {
-  font-size: 0.85rem;
-  color: $v2-muted;
-  line-height: 1.6;
-  margin: 1rem 0 0 0;
+  font-size: 0.7rem;
 }
 
 .v2-hero__firstname {
@@ -180,30 +155,31 @@ a.v2-link {
   }
 }
 
+// Bottom row: links left (same width as photo), bio right (same width as name)
 .v2-hero__bottom {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: end;
-  margin-top: 3rem;
+  grid-template-columns: 2fr 3fr;
+  gap: 2.5rem;
+  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 0.5px solid $v2-rule;
 }
 
-.v2-hero__portrait-placeholder {
-  aspect-ratio: 4 / 5;
-  background: #EDE8DA;
-  border: 0.5px solid $v2-rule;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.v2-hero__bio-tagline {
+  font-family: $v2-font-serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin: 0.75rem 0 0 0;
 }
 
-.v2-hero__portrait-meta {
-  padding: 0.5rem 0;
+.v2-hero__bio-detail {
+  font-size: 0.9rem;
   color: $v2-muted;
-  font-size: 0.7rem;
+  line-height: 1.6;
+  margin: 1rem 0 0 0;
 }
-
-.v2-hero__index {}
 
 .v2-hero__links {
   list-style: none;
