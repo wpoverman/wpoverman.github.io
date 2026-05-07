@@ -100,13 +100,12 @@ a.v2-link {
   align-items: end;
 }
 
-.v2-hero__portrait-placeholder {
+.v2-hero__portrait-img {
+  width: 100%;
   aspect-ratio: 3 / 3.5;
-  background: #EDE8DA;
+  object-fit: cover;
+  display: block;
   border: 0.5px solid $v2-rule;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .v2-hero__portrait-meta {
