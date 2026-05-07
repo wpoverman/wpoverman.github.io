@@ -71,7 +71,7 @@ a.v2-link {
 // Hero
 .v2-hero {
   position: relative;
-  padding: 2rem 0 1.5rem 0;
+  padding: 1.5rem 0 1rem 0;
   overflow: hidden;
 }
 
@@ -168,16 +168,16 @@ a.v2-link {
 .v2-hero__bio-tagline {
   font-family: $v2-font-serif;
   font-style: italic;
-  font-size: 1.15rem;
-  line-height: 1.5;
-  margin: 0.75rem 0 0 0;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin: 0.5rem 0 0 0;
 }
 
 .v2-hero__bio-detail {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: $v2-muted;
-  line-height: 1.6;
-  margin: 1rem 0 0 0;
+  line-height: 1.55;
+  margin: 0.75rem 0 0 0;
 }
 
 .v2-hero__links {
