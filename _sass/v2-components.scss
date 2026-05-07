@@ -70,145 +70,97 @@ a.v2-link {
 
 // Hero
 .v2-hero {
-  position: relative;
-  padding: 1.5rem 0 1rem 0;
-  overflow: hidden;
+  padding: 2rem 0 0 0;
 }
 
-.v2-hero__sidebar {
-  position: absolute;
-  left: 0;
-  top: 3rem;
-  bottom: 2rem;
-}
-
-.v2-hero__sidebar-text {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  white-space: nowrap;
-  letter-spacing: 0.15em;
-  font-size: 0.65rem;
-  color: $v2-muted;
-}
-
-// Top row: photo left, name right
+// Top: photo left, name + role + statement right
 .v2-hero__top {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2.5rem;
-  margin-left: 2.5rem;
-  align-items: end;
+  align-items: start;
 }
 
 .v2-hero__portrait-img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
-  border: 0.5px solid $v2-rule;
 }
 
 .v2-hero__portrait-meta {
-  padding: 0.5rem 0;
+  padding: 0.4rem 0;
   color: $v2-muted;
   font-size: 0.7rem;
 }
 
-.v2-hero__firstname {
-  display: block;
-  font-size: 4.5rem;
-  line-height: 0.95;
-}
-
-.v2-hero__name-rule {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 0.5rem 0;
-
-  &::after {
-    content: '';
-    flex: 1;
-    height: 0;
-    border-top: 0.5px solid $v2-rule;
-  }
+.v2-hero__name {
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin: 0;
 }
 
 .v2-hero__dot {
   color: $v2-accent;
-  font-size: 0.6rem;
 }
 
-.v2-hero__surname-wrap {
-  overflow: hidden;
+.v2-hero__role {
+  margin: 0.75rem 0 0 0;
+  letter-spacing: 0.1em;
 }
 
-.v2-hero__surname {
-  display: block;
-  font-size: 4.5rem;
-  line-height: 0.95;
-  white-space: nowrap;
-
-  em {
-    font-style: italic;
-  }
+.v2-hero__statement {
+  font-family: $v2-font-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  margin: 1rem 0 0 0;
+  max-width: 42ch;
 }
 
-// Bottom row: links left (same width as photo), bio right (same width as name)
+// Bottom: links left (photo width), bio right (name width)
 .v2-hero__bottom {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   gap: 2.5rem;
-  margin-left: 2.5rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 0.5px solid $v2-rule;
-}
-
-.v2-hero__bio-tagline {
-  font-family: $v2-font-serif;
-  font-style: italic;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 0.5rem 0 0 0;
 }
 
 .v2-hero__bio-detail {
   font-size: 0.9rem;
   color: $v2-muted;
   line-height: 1.6;
-  margin: 0.75rem 0 0 0;
+  margin: 0;
 }
 
 .v2-hero__links {
   list-style: none;
-  margin: 0.75rem 0 0 0;
+  margin: 0;
   padding: 0;
 
   li {
     display: flex;
     align-items: baseline;
-    gap: 0.75rem;
-    padding: 0.5rem 0;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
     border-bottom: 0.5px solid $v2-rule;
+
+    &:first-child {
+      border-top: 0.5px solid $v2-rule;
+    }
   }
 
   a {
     font-family: $v2-font-serif;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     flex: 1;
   }
 }
 
-.v2-hero__link-num {
-  font-size: 0.85rem;
-  color: $v2-muted;
-  min-width: 1.5rem;
-}
-
 .v2-hero__link-arrow {
   color: $v2-accent;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 // Bio

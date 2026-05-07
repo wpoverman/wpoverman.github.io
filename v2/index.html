@@ -10,57 +10,32 @@ title: Overman
 
 <!-- §001 Hero -->
 <section class="v2-hero">
-  <div class="v2-hero__sidebar">
-    <span class="v2-hero__sidebar-text v2-mono-label">OIT · Stanford GSB</span>
-  </div>
-
   <div class="v2-hero__top">
     <div class="v2-hero__photo">
       <img src="{{ '/assets/portrait.jpg' | relative_url }}" alt="William Overman" class="v2-hero__portrait-img" loading="lazy">
-      <div class="v2-hero__portrait-meta v2-mono-label">
-        Seoul, SK · 2025
-      </div>
+      <div class="v2-hero__portrait-meta v2-mono-label">Seoul, SK · 2025</div>
     </div>
 
-    <div class="v2-hero__name">
-      <span class="v2-hero__firstname v2-display">William</span>
-      <div class="v2-hero__name-rule">
-        <span class="v2-mono-label">PhD Candidate Stanford</span>
-        <span class="v2-hero__dot">●</span>
-      </div>
-      <div class="v2-hero__surname-wrap">
-        <span class="v2-hero__surname v2-display"><em>Overman.</em></span>
-      </div>
+    <div class="v2-hero__intro">
+      <h1 class="v2-hero__name v2-display">William Overman<span class="v2-hero__dot">.</span></h1>
+      <p class="v2-hero__role v2-mono-label">PhD candidate, Stanford</p>
+      <p class="v2-hero__statement">
+        My research develops approaches to AI safety, focused on how humans can effectively oversee AI systems whose capabilities increasingly surpass their&nbsp;own.
+      </p>
     </div>
   </div>
 
   <div class="v2-hero__bottom">
-    <div class="v2-hero__index">
-      <span class="v2-mono-label">Index of links</span>
+    <div class="v2-hero__links-col">
       <ol class="v2-hero__links">
-        <li>
-          <span class="v2-hero__link-num v2-mono">i.</span>
-          <a href="{{ site.data.main_info.google_scholar }}" class="v2-link" target="_blank" rel="noopener">Google Scholar</a>
-          <span class="v2-hero__link-arrow">↗</span>
-        </li>
-        <li>
-          <span class="v2-hero__link-num v2-mono">ii.</span>
-          <a href="#" class="v2-link">CV</a>
-          <span class="v2-hero__link-arrow">↗</span>
-        </li>
-        <li>
-          <span class="v2-hero__link-num v2-mono">iii.</span>
-          <a href="mailto:wpo@stanford.edu" class="v2-link">wpo@stanford.edu</a>
-          <span class="v2-hero__link-arrow">·</span>
-        </li>
+        <li><a href="{{ site.data.main_info.google_scholar }}" class="v2-link" target="_blank" rel="noopener">Google Scholar</a> <span class="v2-hero__link-arrow">↗</span></li>
+        <li><a href="{{ site.data.main_info.github }}" class="v2-link" target="_blank" rel="noopener">GitHub</a> <span class="v2-hero__link-arrow">↗</span></li>
+        <li><a href="#" class="v2-link">CV</a> <span class="v2-hero__link-arrow">↗</span></li>
+        <li><a href="mailto:wpo@stanford.edu" class="v2-link">wpo@stanford.edu</a></li>
       </ol>
     </div>
 
     <div class="v2-hero__bio">
-      <span class="v2-mono-label">002 · About</span>
-      <p class="v2-hero__bio-tagline">
-        My research develops approaches to AI safety, focused on how humans can effectively oversee AI systems whose capabilities increasingly surpass their&nbsp;own.
-      </p>
       <p class="v2-hero__bio-detail">
         I'm a Ph.D. student in Operations, Information, and Technology at Stanford Graduate School of Business, advised by Mohsen Bayati. Before Stanford, I was a visiting researcher at the Institute for Basic Science in South Korea and earned an M.Sc. in Computer Science from UC Irvine. I graduated from Caltech in 2020 with a double major in Mathematics and Computer Science.
       </p>
@@ -68,10 +43,10 @@ title: Overman
   </div>
 </section>
 
-<!-- §003 Selected work -->
+<!-- §001 Selected work -->
 <section class="v2-section v2-selected-work">
   <div class="v2-section__numbered">
-    <span class="v2-mono-label">003</span>
+    <span class="v2-mono-label">001</span>
     <div class="v2-selected-work__content">
       <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Selected work</h2>
       {% for paper in pubs limit: 5 %}
@@ -102,7 +77,7 @@ title: Overman
 <!-- §004 Notes -->
 <section class="v2-section v2-recent-notes">
   <div class="v2-section__numbered">
-    <span class="v2-mono-label">004</span>
+    <span class="v2-mono-label">002</span>
     <div class="v2-recent-notes__content">
       <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Recent notes</h2>
       {% for post in posts %}
@@ -125,7 +100,7 @@ title: Overman
 <!-- §005 Reading -->
 <section class="v2-section v2-reading">
   <div class="v2-section__numbered">
-    <span class="v2-mono-label">005</span>
+    <span class="v2-mono-label">003</span>
     <div class="v2-reading__content">
       <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Currently reading</h2>
       <div class="v2-reading__books">
@@ -151,43 +126,12 @@ title: Overman
 <script>
 (function () {
   var tz = {{ loc.tz | jsonify }};
-
-  // Date
   var dateEl = document.getElementById('v2-meta-date');
   if (dateEl) {
     var now = new Date();
     dateEl.textContent = now.toLocaleDateString('en-US', {
-      timeZone: tz, weekday: 'long', year: 'numeric', month: 'long', day: '2-digit'
+      timeZone: tz, year: 'numeric', month: 'long', day: '2-digit'
     });
-  }
-
-  // Live clock
-  var clockEl = document.getElementById('v2-clock');
-  if (clockEl) {
-    function tick() {
-      var now = new Date();
-      clockEl.textContent = now.toLocaleTimeString('en-US', {
-        timeZone: tz, hour: '2-digit', minute: '2-digit', hour12: false
-      });
-    }
-    tick();
-    setInterval(tick, 30000);
-  }
-
-  // Weather from Open-Meteo
-  var lat = {{ loc.lat }};
-  var lon = {{ loc.lon }};
-  var weatherEl = document.getElementById('v2-weather');
-  if (weatherEl) {
-    fetch('https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon + '&current_weather=true&temperature_unit=fahrenheit')
-      .then(function (r) { return r.json(); })
-      .then(function (d) {
-        var w = d.current_weather;
-        weatherEl.textContent = Math.round(w.temperature) + '°F';
-      })
-      .catch(function () {
-        weatherEl.textContent = '--';
-      });
   }
 })();
 </script>
