@@ -133,6 +133,13 @@ a.v2-link {
   max-width: 28ch;
 }
 
+.v2-hero__ground-bio {
+  font-size: 0.85rem;
+  color: $v2-muted;
+  line-height: 1.6;
+  margin: 1rem 0 0 0;
+}
+
 .v2-hero__firstname {
   display: block;
   font-size: 6.5rem;
