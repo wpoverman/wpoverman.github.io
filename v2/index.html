@@ -9,34 +9,69 @@ title: Overman
 {% assign posts = site.posts | where: "layout", "v2-post" | slice: 0, 3 %}
 
 <!-- §001 Hero -->
-<section class="v2-section v2-hero">
-  <div class="v2-hero__grid">
+<section class="v2-hero">
+  <div class="v2-hero__sidebar">
+    <span class="v2-hero__sidebar-text v2-mono-label">OIT · Stanford GSB · Established MMXXI</span>
+  </div>
+
+  <div class="v2-hero__body">
     <div class="v2-hero__left">
-      <span class="v2-mono-label">001</span>
-      <div class="v2-hero__name-block">
-        <span class="v2-hero__firstname v2-display">William</span>
-        <div class="v2-hero__name-rule">
-          <span class="v2-mono-label">PhD student · Stanford</span>
-        </div>
-        <span class="v2-hero__surname v2-display"><em>Overman</em><span class="v2-hero__dot">.</span></span>
+      <div class="v2-hero__subject">
+        <span class="v2-mono-label">Subject</span>
+        <p class="v2-hero__subject-text">a researcher, a city, an open question.</p>
       </div>
-      <p class="v2-hero__tagline">
-        My research develops approaches to AI safety, focused on how humans can effectively oversee AI systems whose capabilities increasingly surpass their own.
-      </p>
-      <ul class="v2-hero__links">
-        <li><a href="{{ site.data.main_info.google_scholar }}" class="v2-link v2-mono-label" target="_blank" rel="noopener">google scholar</a></li>
-        <li><a href="#" class="v2-link v2-mono-label">cv.pdf</a></li>
-        <li><a href="mailto:wpo@stanford.edu" class="v2-link v2-mono-label">wpo@stanford.edu</a></li>
-      </ul>
+
+      <div class="v2-hero__ground">
+        <div class="v2-hero__ground-rule"></div>
+        <span class="v2-mono-label">002 · Ground</span>
+        <p class="v2-hero__ground-text">
+          My research develops approaches to AI safety, focused on how humans can effectively oversee AI systems whose capabilities increasingly surpass their own.
+        </p>
+      </div>
     </div>
+
     <div class="v2-hero__right">
-      <div class="v2-hero__portrait">
-        <div class="v2-hero__portrait-placeholder">
-          <span class="v2-mono-label">Plate I</span>
-        </div>
-        <div class="v2-hero__portrait-meta v2-mono-label">
-          Stanford, CA · 2026
-        </div>
+      <span class="v2-hero__firstname v2-display">William</span>
+
+      <div class="v2-hero__name-rule">
+        <span class="v2-mono-label">B. 1997 · Caltech '20</span>
+        <span class="v2-hero__dot">●</span>
+      </div>
+
+      <div class="v2-hero__surname-wrap">
+        <span class="v2-hero__surname v2-display"><em>Overman.</em></span>
+      </div>
+
+      <div class="v2-hero__index">
+        <span class="v2-mono-label">Index of links</span>
+        <ol class="v2-hero__links">
+          <li>
+            <span class="v2-hero__link-num v2-mono">i.</span>
+            <a href="{{ site.data.main_info.google_scholar }}" class="v2-link" target="_blank" rel="noopener">Google Scholar</a>
+            <span class="v2-hero__link-arrow">↗</span>
+          </li>
+          <li>
+            <span class="v2-hero__link-num v2-mono">ii.</span>
+            <a href="{{ site.data.main_info.github }}" class="v2-link" target="_blank" rel="noopener">GitHub</a>
+            <span class="v2-hero__link-arrow">↗</span>
+          </li>
+          <li>
+            <span class="v2-hero__link-num v2-mono">iii.</span>
+            <a href="https://arxiv.org/search/?query=william+overman&searchtype=author" class="v2-link" target="_blank" rel="noopener">arXiv</a>
+            <span class="v2-hero__link-arrow">↗</span>
+          </li>
+          <li>
+            <span class="v2-hero__link-num v2-mono">iv.</span>
+            <a href="#" class="v2-link">Curriculum vitae</a>
+            <span class="v2-mono" style="color: rgba(20,30,70,0.4); font-size: 0.8rem;">(pdf)</span>
+            <span class="v2-hero__link-arrow">↗</span>
+          </li>
+          <li>
+            <span class="v2-hero__link-num v2-mono">v.</span>
+            <a href="mailto:wpo@stanford.edu" class="v2-link">wpo@stanford.edu</a>
+            <span class="v2-hero__link-arrow">·</span>
+          </li>
+        </ol>
       </div>
     </div>
   </div>
