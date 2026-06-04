@@ -3,6 +3,7 @@ papers:
   - title: "Calibrating Conservatism for Scalable Oversight"
     authors: "<b>W Overman</b>, M Bayati"
     venue: "ICML 2026: International Conference on Machine Learning. 2026."
+    arxiv: "https://arxiv.org/abs/2605.28807"
     selected: y
 
   - title: "The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy"
@@ -23,6 +24,7 @@ papers:
   - title: "Annealed Softmax Greedy in Many-Armed Bayesian Bandits"
     authors: "<b>W Overman</b>, M Bayati"
     venue: "RLC 2026: Reinforcement Learning Conference 2026."
+    arxiv: "https://arxiv.org/abs/2605.31034"
     selected: y
 
   - title: "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
