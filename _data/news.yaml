@@ -11,6 +11,6 @@ items:
   - date: "April 2026"
     text: >-
       Two papers were accepted to ICML 2026:
-      <a href="/assets/publications/2026_cco/paper.pdf" target="_blank" rel="noopener">Calibrating Conservatism for Scalable Oversight</a>
+      <a href="https://arxiv.org/abs/2605.28807" target="_blank" rel="noopener">Calibrating Conservatism for Scalable Oversight</a>
       and
-      <a href="/assets/publications/2025_oversight_game/paper.pdf" target="_blank" rel="noopener">The Oversight Game</a>.
+      <a href="https://arxiv.org/abs/2510.26752" target="_blank" rel="noopener">The Oversight Game</a>.
