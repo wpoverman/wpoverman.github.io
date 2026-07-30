@@ -8,9 +8,9 @@ items:
     text: >-
       I successfully defended my Ph.D. dissertation at Stanford.
 
-  - date: "April 2026"
+  - date: "July 2026"
     text: >-
-      Two papers were accepted to ICML 2026:
+      Presented two posters at ICML 2026:
       <a href="https://arxiv.org/abs/2605.28807" target="_blank" rel="noopener">Calibrating Conservatism for Scalable Oversight</a>
       and
       <a href="https://arxiv.org/abs/2510.26752" target="_blank" rel="noopener">The Oversight Game</a>.
