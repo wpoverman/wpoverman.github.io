@@ -37,6 +37,27 @@ h4 {
   border-top: 1px solid #eee;
   padding: 4rem 0;
   margin-bottom: 0;}
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.news-list li {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  column-gap: 1.5rem;
+  margin-bottom: 1.2rem; }
+.news-list li:last-child {
+  margin-bottom: 0; }
+.news-date {
+  font-weight: 600;
+  white-space: nowrap; }
+@media (max-width: 549px) {
+  .news-list li {
+    display: block; }
+  .news-date {
+    display: block;
+    margin-bottom: .2rem; }
+}
 .footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);

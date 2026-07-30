@@ -5,14 +5,15 @@
   <!-- Basic Page Needs -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="William Overman">
-  <meta name="author" content="William Overman">
+  <meta name="description" content="{{ site.data.main_info.description }}">
+  <meta name="author" content="{{ site.data.main_info.name }}">
   <meta name="google-site-verification" content="Qq5NRkErmOjD4gi1RQpvbr6WOLlbGteRd2gu1E4lGK8" />
-  <meta property="og:title" content="William Overman" />
+  <meta property="og:title" content="{{ site.data.main_info.name }}" />
+  <meta property="og:description" content="{{ site.data.main_info.description }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.woverman.com" />
-  <meta property="og:site_name" content="William Overman" />
-  <link rel="canonical" href="http://www.woverman.com" />
+  <meta property="og:url" content="https://woverman.com/" />
+  <meta property="og:site_name" content="{{ site.data.main_info.name }}" />
+  <link rel="canonical" href="https://woverman.com/" />
 
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +58,7 @@
     <section class="header">
       <div class="row">
         <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
+          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}' alt="Portrait of {{ site.data.main_info.name }}"></a>
         </div>
         <div class="nine columns main-description">
             <h1>{{ site.data.main_info.name }}</h1>
@@ -85,6 +86,7 @@
       <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#news" | prepend: site.baseurl }}>News</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
           <!--<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>-->
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Vita</a></li>

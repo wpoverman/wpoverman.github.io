@@ -5,26 +5,41 @@ title: Home
 <!-- ========== BIO ========== -->
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
-
-<p>
-My research develops approaches to <b>AI safety and alignment</b> [<a href="https://wpoverman.github.io/assets/publications/2024_aligning_properties/paper.pdf" target="_blank">NeurIPS'24</a>,
-<a href="https://wpoverman.github.io/assets/publications/2025_conformal_arbitrage/paper.pdf" target="_blank">NeurIPS'25</a>], with a particular emphasis on helping humans effectively supervise AI systems as they become increasingly capable [<a href="https://wpoverman.github.io/assets/publications/2025_oversight_game/paper.pdf" target="_blank">arXiv'25</a>]. I draw on tools from reinforcement learning, uncertainty quantification, causal inference, and game theory to provide rigorous guarantees for safe AI deployment and decision-making.
-</p>
-
   <p>
-  I’m a Ph.D. student in Operations, Information, and Technology at Stanford Graduate School of Business, advised by 
-  <a href="https://web.stanford.edu/~bayati/" target="_blank">Mohsen Bayati</a>. Before Stanford, 
-  I was a visiting researcher at the Institue for Basic Science in South Korea and earned an M.Sc. in Computer Science from UC Irvine. I graduated from Caltech in 
-  2020 with a double major in Mathematics and Computer Science.
+    My research develops methods with formal guarantees for <b>AI safety and alignment</b>, especially <b>scalable oversight</b>:
+    how humans can monitor, correct, and retain meaningful control over increasingly capable AI systems. Recent work studies how
+    weaker overseers can constrain stronger agents [<a href="{{ ‘/assets/publications/2026_cco/paper.pdf’ | prepend: site.baseurl }}" target="_blank" rel="noopener">ICML’26</a>],
+    how human–agent protocols can balance safety and autonomy [<a href="{{ ‘/assets/publications/2025_oversight_game/paper.pdf’ | prepend: site.baseurl }}" target="_blank" rel="noopener">ICML’26</a>],
+    risk-controlled model alignment [<a href="{{ ‘/assets/publications/2024_aligning_properties/paper.pdf’ | prepend: site.baseurl }}" target="_blank" rel="noopener">NeurIPS’24</a>,
+    <a href="{{ ‘/assets/publications/2025_conformal_arbitrage/paper.pdf’ | prepend: site.baseurl }}" target="_blank" rel="noopener">NeurIPS’25</a>],
+    and causal evaluation in interacting human–AI populations [<a href="{{ ‘/assets/publications/2026_causal_humanAI/paper.pdf’ | prepend: site.baseurl }}" target="_blank" rel="noopener">ICML’26 Workshop</a>].
+    I draw on tools from reinforcement learning, uncertainty quantification, causal inference, and game theory.
   </p>
-
   <p>
-  In addition to my primary focus on AI safety and alignment, my research also explores reinforcement learning [<a href="https://wpoverman.github.io/assets/publications/2022_global_convergence/paper.pdf" target="_blank">ICLR'22</a>,
-  <a href="https://wpoverman.github.io/assets/publications/2025_cost_pessimism/paper.pdf" target="_blank">RLC'25</a>], causal inference [<a href="https://wpoverman.github.io/assets/publications/2024_higher_order/paper.pdf" target="_blank">NeurIPS'24</a>,
-  <a href="https://wpoverman.github.io/assets/publications/2025_validate_counterfactual_estimates/paper.pdf" target="_blank">arXiv'25</a>], and AI applications in healthcare [
-  <a href="https://wpoverman.github.io/assets/publications/2023_occupancy_prediction/paper.pdf" target="_blank">SSRN'23</a>,<a href="https://wpoverman.github.io/assets/publications/2025_aligning_clinical/paper.pdf" target="_blank">arXiv'25</a>]. 
-  Throughout my graduate studies, I have interned at Uber, where I have applied my research work in RL and causal inference to problems in the ridesharing and delivery marketplaces. 
+    I am a Ph.D. candidate in Operations, Information, and Technology at the Stanford Graduate School of Business, advised by
+    <a href="https://web.stanford.edu/~bayati/" target="_blank" rel="noopener">Mohsen Bayati</a>. I successfully defended my dissertation in May 2026.
+    Before Stanford, I was a visiting researcher at the Institute for Basic Science in South Korea, earned an M.S. in Computer Science from UC Irvine,
+    and completed a B.S. in Mathematics and Computer Science at Caltech.
   </p>
+  <p>
+    I also work on reinforcement learning and sequential decision-making [<a href="{{ ‘/assets/publications/2026_rlc/paper.pdf’ | prepend: site.baseurl }}" target="_blank" rel="noopener">RLC’26</a>,
+    <a href="{{ ‘/assets/publications/2022_global_convergence/paper.pdf’ | prepend: site.baseurl }}" target="_blank" rel="noopener">ICLR’22</a>],
+    network experimentation [<a href="{{ ‘/assets/publications/2024_higher_order/paper.pdf’ | prepend: site.baseurl }}" target="_blank" rel="noopener">NeurIPS’24</a>],
+    and healthcare operations. I have also interned at Uber, applying reinforcement learning and causal inference to problems in the ridesharing and delivery marketplaces.
+  </p>
+</div>
+
+<!-- ========== NEWS ========== -->
+<div class="docs-section" id="news">
+  <h4>News</h4>
+  <ul class="news-list">
+    {% for item in site.data.news.items %}
+      <li>
+        <span class="news-date">{{ item.date }}</span>
+        <span class="news-item">{{ item.text }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
 <!--

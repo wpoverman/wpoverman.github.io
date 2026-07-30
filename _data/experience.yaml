@@ -1,14 +1,14 @@
 experiences:
 
 - place: "Stanford"
-  time: "2022 - now"
-  title: "PhD Student"
-  subtitle: "GSB"
+  time: "2022 - present"
+  title: "Ph.D. Candidate"
+  subtitle: "Operations, Information, and Technology, GSB"
   category: "work"
 
 - place: "Uber"
-  time: "Summer 2023-"
-  title: "Applied Scientist, Intern"
+  time: "Summers 2023 & 2025"
+  title: "Applied Scientist Intern"
   subtitle: "Airports Team & Uber Eats"
   category: "school"
 

@@ -1,0 +1,16 @@
+items:
+  - date: "Fall 2026"
+    text: >-
+      I will mentor the SPAR project
+      <a href="https://sparai.org/projects/f26/recjmG0Nfo4Ijp61q?mentor=William+Overman" target="_blank" rel="noopener">Benchmarking When to Apply Oversight for Agentic AI</a>.
+
+  - date: "May 2026"
+    text: >-
+      I successfully defended my Ph.D. dissertation at Stanford.
+
+  - date: "April 2026"
+    text: >-
+      Two papers were accepted to ICML 2026:
+      <a href="/assets/publications/2026_cco/paper.pdf" target="_blank" rel="noopener">Calibrating Conservatism for Scalable Oversight</a>
+      and
+      <a href="/assets/publications/2025_oversight_game/paper.pdf" target="_blank" rel="noopener">The Oversight Game</a>.
