@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/tufte-main.css' | relative_url }}">
+</head>
+<body class="tufte">
+  {% include tufte-nav.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include tufte-footer.html %}
+</body>
+</html>

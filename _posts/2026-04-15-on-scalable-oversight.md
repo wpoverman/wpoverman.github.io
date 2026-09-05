@@ -1,9 +1,9 @@
 ---
-layout: v2-post
+layout: tufte-post
 title: "On scalable oversight and the limits of conservative policies"
 subtitle: "Why calibrating conservatism matters more than maximizing safety"
 category: Research
-permalink: /v2/notes/on-scalable-oversight/
+permalink: /notes/on-scalable-oversight/
 ---
 
 This is a sample research note to test the post template. Replace with real content.

@@ -1,9 +1,9 @@
 ---
-layout: v2-post
+layout: tufte-post
 title: "Reading notes: The Alignment Problem"
 subtitle: "Brian Christian's survey of the field, revisited in 2026"
 category: Book review
-permalink: /v2/notes/reading-the-alignment-problem/
+permalink: /notes/reading-the-alignment-problem/
 ---
 
 A sample book review post to test the template. Replace with real content.

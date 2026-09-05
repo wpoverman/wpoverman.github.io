@@ -1,137 +1,61 @@
 ---
-layout: v2-home
-title: Overman
+layout: tufte-home
+title: William Overman
 ---
 
-{% assign loc = site.data.v2.location %}
 {% assign pubs = site.data.v2.publications | where: "selected", true %}
-{% assign books = site.data.v2.reading | slice: 0, 2 %}
-{% assign posts = site.posts | where: "layout", "v2-post" | slice: 0, 3 %}
 
-<!-- §001 Hero -->
-<section class="v2-hero">
-  <div class="v2-hero__top">
-    <div class="v2-hero__photo">
-      <img src="{{ '/assets/portrait.jpg' | relative_url }}" alt="William Overman" class="v2-hero__portrait-img" loading="lazy">
-      <div class="v2-hero__portrait-meta v2-mono-label">Seoul, SK · 2025</div>
-    </div>
+<section class="tufte-hero">
+  <h1>William Overman</h1>
+  <p class="tufte-hero__subtitle">PhD, Stanford GSB</p>
 
-    <div class="v2-hero__intro">
-      <h1 class="v2-hero__name v2-display">William Overman<span class="v2-hero__dot">.</span></h1>
-      <p class="v2-hero__role v2-mono-label">PhD candidate, Stanford</p>
-      <p class="v2-hero__statement">
+  <div class="tufte-hero__content">
+    <div class="tufte-hero__text">
+      <p class="tufte-hero__bio">
         My research develops approaches to AI safety, focused on how humans can effectively oversee AI systems whose capabilities increasingly surpass their&nbsp;own.
       </p>
-    </div>
-  </div>
 
-  <div class="v2-hero__bottom">
-    <div class="v2-hero__links-col">
-      <ol class="v2-hero__links">
-        <li><a href="{{ site.data.main_info.google_scholar }}" class="v2-link" target="_blank" rel="noopener">Google Scholar</a> <span class="v2-hero__link-arrow">↗</span></li>
-        <li><a href="#" class="v2-link">CV</a> <span class="v2-hero__link-arrow">&#9702;</span></li>
-        <li><a href="mailto:wpo@stanford.edu" class="v2-link">wpo@stanford.edu</a> <span class="v2-hero__link-arrow">&#9993;</span></li>
-        <li><a href="{{ site.data.main_info.github }}" class="v2-link" target="_blank" rel="noopener">GitHub</a> <span class="v2-hero__link-arrow">↗</span></li>
-      </ol>
-    </div>
-
-    <div class="v2-hero__bio">
-      <p class="v2-hero__bio-detail">
-        I'm a Ph.D. student in Operations, Information, and Technology at Stanford Graduate School of Business, advised by Mohsen Bayati. Before Stanford, I was a visiting researcher at the Institute for Basic Science in South Korea and earned an M.Sc. in Computer Science from UC Irvine. I graduated from Caltech in 2020 with a double major in Mathematics and Computer Science.
+      <p class="tufte-hero__bio tufte-hero__bio--detail">
+        I'm a Ph.D. student in Operations, Information, and Technology at Stanford Graduate School of Business, advised by Mohsen Bayati. Before Stanford, I was a visiting researcher at the Institute for Basic Science in South Korea and earned an M.Sc. in Computer Science from UC Irvine. I graduated from Caltech with a double major in Mathematics and Computer&nbsp;Science.
       </p>
-    </div>
-  </div>
-</section>
 
-<!-- §001 Selected work -->
-<section class="v2-section v2-selected-work">
-  <div class="v2-section__numbered">
-    <span class="v2-mono-label">001</span>
-    <div class="v2-selected-work__content">
-      <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Selected work</h2>
-      {% for paper in pubs limit: 5 %}
-      <article class="v2-papers__row">
-        <div class="v2-papers__date v2-mono">
-          {{ paper.year }}.{{ paper.month | prepend: '00' | slice: -2, 2 }}
-        </div>
-        <div class="v2-papers__info">
-          <a href="{{ paper.arxiv_url | default: '#' }}" class="v2-papers__title" target="_blank" rel="noopener">{{ paper.title_short | default: paper.title }}</a>
-          <span class="v2-papers__authors">{{ paper.authors }}</span>
-          <span class="v2-papers__venue">{{ paper.venue }}</span>
-        </div>
-        <div class="v2-papers__links">
-          {% if paper.arxiv_url %}
-            <a href="{{ paper.arxiv_url }}" class="v2-link v2-mono-label" target="_blank" rel="noopener">arxiv</a>
-          {% endif %}
-          {% if paper.guide_slug %}
-            <a href="{{ '/v2/papers/' | append: paper.guide_slug | append: '/' | relative_url }}" class="v2-link v2-mono-label">notes</a>
-          {% endif %}
-        </div>
-      </article>
-      {% endfor %}
-      <a href="{{ '/v2/papers/' | relative_url }}" class="v2-link v2-mono-label" style="margin-top: 1rem; display: inline-block;">all {{ site.data.v2.publications | size }} papers ↗</a>
-    </div>
-  </div>
-</section>
-
-<!-- §004 Notes -->
-<section class="v2-section v2-recent-notes">
-  <div class="v2-section__numbered">
-    <span class="v2-mono-label">002</span>
-    <div class="v2-recent-notes__content">
-      <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Recent notes</h2>
-      {% for post in posts %}
-      <article class="v2-notes__row">
-        <div class="v2-notes__date v2-mono">
-          {{ post.date | date: "%Y.%m" }}
-        </div>
-        <div class="v2-notes__info">
-          <a href="{{ post.url | relative_url }}" class="v2-notes__title">{{ post.title }}</a>
-        </div>
-        <span class="v2-notes__category v2-mono-label">{{ post.category }}</span>
-        <a href="{{ post.url | relative_url }}" class="v2-link v2-mono-label">read</a>
-      </article>
-      {% endfor %}
-      <a href="{{ '/v2/notes/' | relative_url }}" class="v2-link v2-mono-label" style="margin-top: 1rem; display: inline-block;">archive ↗</a>
-    </div>
-  </div>
-</section>
-
-<!-- §005 Reading -->
-<section class="v2-section v2-reading">
-  <div class="v2-section__numbered">
-    <span class="v2-mono-label">003</span>
-    <div class="v2-reading__content">
-      <h2 class="v2-mono-label" style="margin: 0 0 1rem 0;">Currently reading</h2>
-      <div class="v2-reading__books">
-        {% for book in books %}
-        <div class="v2-reading__book">
-          <div class="v2-reading__cover" style="background: {{ book.cover_color }};">
-            <span>{{ book.cover_text }}</span>
-          </div>
-          <div class="v2-reading__info">
-            <span class="v2-reading__title">{{ book.title }}</span>
-            <span class="v2-reading__author">{{ book.author }}</span>
-            <span class="v2-reading__note">{{ book.note }}</span>
-          </div>
-        </div>
-        {% endfor %}
+      <div class="tufte-hero__links">
+        <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a><span class="sep">·</span><a href="/assets/cv.pdf" target="_blank" rel="noopener">CV</a><span class="sep">·</span><a href="mailto:wpo@stanford.edu">wpo@stanford.edu</a><span class="sep">·</span><a href="{{ site.data.main_info.github }}" target="_blank" rel="noopener">GitHub</a>
       </div>
-      <a href="#" class="v2-link v2-mono-label" style="margin-top: 1rem; display: inline-block;">all reading ↗</a>
     </div>
+
+    <img src="{{ '/assets/portrait-new.png' | relative_url }}" alt="William Overman" class="tufte-hero__photo">
   </div>
 </section>
 
-{% assign loc = site.data.v2.location %}
-<script>
-(function () {
-  var tz = {{ loc.tz | jsonify }};
-  var dateEl = document.getElementById('v2-meta-date');
-  if (dateEl) {
-    var now = new Date();
-    dateEl.textContent = now.toLocaleDateString('en-US', {
-      timeZone: tz, year: 'numeric', month: 'long', day: '2-digit'
-    });
-  }
-})();
-</script>
+<section>
+  <h2 class="tufte-section-heading">Selected Work</h2>
+
+  {% assign prev_year = nil %}
+  {% for paper in pubs limit: 7 %}
+
+  {% unless paper.year == prev_year %}
+  <span class="tufte-pub__year-marker">{{ paper.year }}</span>
+  {% assign prev_year = paper.year %}
+  {% endunless %}
+
+  <div class="tufte-pub">
+    <a href="{{ paper.arxiv_url | default: '#' }}" class="tufte-pub__title" target="_blank" rel="noopener">{{ paper.title }}</a>
+    <span class="tufte-pub__authors">{{ paper.authors }}</span>
+    <span class="tufte-pub__venue">{{ paper.venue }}</span>
+  </div>
+
+  {% endfor %}
+
+  <a href="{{ '/v2/papers/' | relative_url }}" class="tufte-more-link">All papers &rarr;</a>
+</section>
+
+<section>
+  <h2 class="tufte-section-heading">News</h2>
+  <ul class="tufte-news">
+    <li><span class="tufte-news__date">2026.09</span> Invited <a href="https://en.snu.ac.kr/snunow/events?md=v&bbsidx=175016" target="_blank" rel="noopener">talk</a> at Seoul National University: "Control of Increasingly Capable AI Systems with Safety Guarantees"</li>
+    <li><span class="tufte-news__date">2026.09</span> Will mentor the <a href="https://sparai.org/projects/f26/recjmG0Nfo4Ijp61q/?mentor=William+Overman" target="_blank" rel="noopener">SPAR project</a> titled "Benchmarking When to Apply Oversight for Agentic AI"</li>
+    <li><span class="tufte-news__date">2026.07</span> Presented two posters at ICML 2026: "<a href="https://arxiv.org/abs/2605.28807" target="_blank" rel="noopener">Calibrating Conservatism for Scalable Oversight</a>" and "<a href="https://arxiv.org/abs/2510.26752" target="_blank" rel="noopener">The Oversight Game</a>"</li>
+    <li><span class="tufte-news__date">2026.05</span> Successfully defended Ph.D. dissertation at Stanford</li>
+  </ul>
+</section>

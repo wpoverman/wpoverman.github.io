@@ -1,9 +1,9 @@
 ---
-layout: v2-post
+layout: tufte-post
 title: "Jekyll tips for academic sites"
 subtitle: "Lessons from rebuilding my personal site"
 category: Technical
-permalink: /v2/notes/jekyll-tips-for-academics/
+permalink: /notes/jekyll-tips-for-academics/
 ---
 
 A sample technical post. Replace with real content.
