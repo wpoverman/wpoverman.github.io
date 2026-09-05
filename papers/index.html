@@ -1,0 +1,79 @@
+---
+layout: tufte-default
+title: Papers — William Overman
+---
+
+{% assign papers = site.data.v2.publications %}
+{% assign years = papers | map: "year" | uniq %}
+
+<section class="tufte-papers-page">
+  <h1>Publications</h1>
+
+  <div class="tufte-pills" role="radiogroup" aria-label="Filter papers by topic">
+    <button class="tufte-pill tufte-pill--active" data-filter="all">All</button>
+    <button class="tufte-pill" data-filter="AI Safety">AI Safety</button>
+    <button class="tufte-pill" data-filter="Game Theory">Game Theory</button>
+    <button class="tufte-pill" data-filter="RL">RL</button>
+    <button class="tufte-pill" data-filter="Causal Inference">Causal Inference</button>
+    <button class="tufte-pill" data-filter="Healthcare">Healthcare</button>
+    <button class="tufte-pill" data-filter="Conformal">Conformal</button>
+    <button class="tufte-pill" data-filter="Math">Math</button>
+  </div>
+</section>
+
+{% for year in years %}
+<section class="tufte-year-group" data-year="{{ year }}">
+  <h2 class="tufte-year-heading">{{ year }}</h2>
+
+  {% for paper in papers %}
+  {% if paper.year == year %}
+  <article class="tufte-paper-row{% if paper.hide_from_all %} tufte-paper-row--hidden{% endif %}" data-tags="{{ paper.tags | join: ',' }}"{% if paper.hide_from_all %} style="display:none"{% endif %}>
+    <div class="tufte-paper-row__date">{{ paper.year }}.{{ paper.month | prepend: '00' | slice: -2, 2 }}</div>
+    <a href="{{ paper.arxiv_url | default: '#' }}" class="tufte-paper-row__title" target="_blank" rel="noopener">{{ paper.title }}</a>
+    <div class="tufte-paper-row__meta">
+      {{ paper.authors }}<br>
+      <span class="venue">{{ paper.venue }}</span>
+      {% if paper.venue_note %}<br><span class="venue-note">{{ paper.venue_note }}</span>{% endif %}
+    </div>
+    {% if paper.arxiv_url %}
+    <div class="tufte-paper-row__links">
+      <a href="{{ paper.arxiv_url }}" target="_blank" rel="noopener">{% if paper.arxiv_url contains 'github.com' %}PDF{% else %}arXiv{% endif %}</a>
+    </div>
+    {% endif %}
+  </article>
+  {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+<script>
+(function () {
+  var pills = document.querySelectorAll('.tufte-pill');
+  var rows = document.querySelectorAll('.tufte-paper-row');
+  var groups = document.querySelectorAll('.tufte-year-group');
+
+  pills.forEach(function (pill) {
+    pill.addEventListener('click', function () {
+      var filter = this.getAttribute('data-filter');
+
+      pills.forEach(function (p) { p.classList.remove('tufte-pill--active'); });
+      this.classList.add('tufte-pill--active');
+
+      rows.forEach(function (row) {
+        var hidden = row.classList.contains('tufte-paper-row--hidden');
+        if (filter === 'all') {
+          row.style.display = hidden ? 'none' : '';
+        } else {
+          var tags = row.getAttribute('data-tags').split(',');
+          row.style.display = tags.indexOf(filter) !== -1 ? '' : 'none';
+        }
+      });
+
+      groups.forEach(function (group) {
+        var visible = group.querySelectorAll('.tufte-paper-row:not([style*="display: none"])');
+        group.style.display = visible.length ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>

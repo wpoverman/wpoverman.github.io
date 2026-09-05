@@ -1,0 +1,206 @@
+# V2 publications data
+# Ordered by display priority: year desc, then month desc within year.
+# Templates iterate in this order — do not re-sort.
+
+# --- 2026 ---
+
+- title: "Planning Against Learning in Rank-1 Games"
+  authors: "W Overman"
+  venue: "arXiv preprint"
+  year: 2026
+  month: 8
+  paper_url:
+  arxiv_url: "https://arxiv.org/abs/2608.18067"
+  guide_slug:
+  tags: [Game Theory]
+  selected: false
+
+- title: "Annealed Softmax Greedy in Many-Armed Bayesian Bandits"
+  authors: "W Overman, M Bayati"
+  venue: "RLC 2026"
+  year: 2026
+  month: 8
+  paper_url:
+  arxiv_url: "https://arxiv.org/abs/2605.31034"
+  guide_slug:
+  tags: [RL]
+  selected: true
+
+- title: "Calibrating Conservatism for Scalable Oversight"
+  authors: "W Overman, M Bayati"
+  venue: "ICML 2026"
+  year: 2026
+  month: 7
+  paper_url:
+  arxiv_url: "https://arxiv.org/abs/2605.28807"
+  guide_slug:
+  tags: [AI Safety, Conformal]
+  selected: true
+
+- title: "The Oversight Game: Learning to Cooperatively Balance an AI Agent's Safety and Autonomy"
+  title_short: "The Oversight Game:<br>Learning to Cooperatively Balance an AI Agent's Safety and Autonomy"
+  authors: "W Overman, M Bayati"
+  venue: "ICML 2026"
+  venue_note: "Early version: NeurIPS'25 Workshop on ML×OR (Spotlight)"
+  year: 2026
+  month: 7
+  paper_url: "/assets/publications/2025_oversight_game/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2510.26752"
+  guide_slug: "oversight-game"
+  tags: [AI Safety, RL]
+  selected: true
+
+- title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
+  authors: "SH Kim, W Overman, J Pauphilet, WC Cha"
+  venue: "Major revision, Manufacturing & Service Operations Management"
+  year: 2026
+  month: 4
+  paper_url: "/assets/publications/2023_occupancy_prediction/paper.pdf"
+  arxiv_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523116"
+  guide_slug:
+  tags: [Healthcare]
+  selected: false
+
+- title: "Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems"
+  authors: "W Overman, S Shirani, M Bayati"
+  venue: "Workshop on Technical AI Governance Research @ ICML 2026"
+  year: 2026
+  month: 3
+  paper_url: "/assets/publications/2026_causal_humanAI/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2603.01339"
+  guide_slug:
+  tags: [Causal Inference, AI Safety]
+  selected: true
+
+# --- 2025 ---
+
+- title: "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
+  authors: "W Overman, M Bayati"
+  venue: "NeurIPS 2025"
+  year: 2025
+  month: 12
+  paper_url: "/assets/publications/2025_conformal_arbitrage/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2506.00911"
+  guide_slug:
+  tags: [Conformal, AI Safety]
+  selected: true
+
+- title: "On Aligning Prediction Models with Clinical Experiential Learning: A Prostate Cancer Case Study"
+  authors: "JJ Vallon, W Overman, W Xu, N Panjwani, X Ling, S Vij, HP Bagshaw, et al."
+  venue: "arXiv preprint"
+  year: 2025
+  month: 9
+  paper_url: "/assets/publications/2025_aligning_clinical/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2509.04053"
+  guide_slug:
+  tags: [Healthcare]
+  selected: false
+
+- title: "Improved Regret Bound for Safe Reinforcement Learning via Tighter Cost Pessimism and Reward Optimism"
+  authors: "K Yu, D Lee, W Overman, D Lee"
+  venue: "RLC 2025"
+  venue_note: "Journal version: Reinforcement Learning Journal (2025)"
+  year: 2025
+  month: 8
+  paper_url: "/assets/publications/2025_cost_pessimism/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2410.10158"
+  guide_slug:
+  tags: [RL]
+  selected: false
+
+- title: "Can We Validate Counterfactual Estimations in the Presence of General Network Interference?"
+  authors: "S Shirani, Y Luo, W Overman, R Xiong, M Bayati"
+  venue: "Major revision, Management Science"
+  venue_note: "Oral presentation at CODE@MIT 2025"
+  year: 2025
+  month: 2
+  paper_url: "/assets/publications/2025_validate_counterfactual_estimates/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2502.01106"
+  guide_slug:
+  tags: [Causal Inference]
+  selected: false
+
+# --- 2024 ---
+
+- title: "Aligning Model Properties via Conformal Risk Control"
+  authors: "W Overman, JJ Vallon, M Bayati"
+  venue: "NeurIPS 2024"
+  year: 2024
+  month: 12
+  paper_url: "/assets/publications/2024_aligning_properties/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2406.18777"
+  guide_slug:
+  tags: [Conformal, AI Safety]
+  selected: true
+
+- title: "Higher-Order Causal Message Passing for Experimentation with Complex Interference"
+  authors: "M Bayati, Y Luo, W Overman, S Shirani, R Xiong"
+  venue: "NeurIPS 2024"
+  year: 2024
+  month: 12
+  paper_url: "/assets/publications/2024_higher_order/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2411.00945"
+  guide_slug:
+  tags: [Causal Inference]
+  selected: false
+
+- title: "Beating Price of Anarchy and Gradient Descent without Regret in Potential Games"
+  authors: "I Sakos, S Leonardos, SA Stavroulakis, W Overman, I Panageas, G Piliouras"
+  venue: "ICLR 2024"
+  year: 2024
+  month: 5
+  paper_url: "/assets/publications/2024_beating_price/paper.pdf"
+  arxiv_url: "https://proceedings.iclr.cc/paper_files/paper/2024/hash/921ac785fa9edc73cacaf2664f43d234-Abstract-Conference.html"
+  guide_slug:
+  tags: [Game Theory]
+  selected: false
+
+# --- 2022 ---
+
+- title: "Global Convergence of Multi-Agent Policy Gradient in Markov Potential Games"
+  authors: "S Leonardos, W Overman, I Panageas, G Piliouras"
+  venue: "ICLR 2022"
+  year: 2022
+  month: 4
+  paper_url: "/assets/publications/2022_global_convergence/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2106.01969"
+  guide_slug:
+  tags: [RL, Game Theory]
+  selected: true
+
+- title: "Independent Natural Policy Gradient Always Converges in Markov Potential Games"
+  authors: "R Fox, SM McAleer, W Overman, I Panageas"
+  venue: "AISTATS 2022"
+  year: 2022
+  month: 3
+  paper_url: "/assets/publications/2022_independent_natural/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2110.10614"
+  guide_slug:
+  tags: [RL, Game Theory]
+  selected: false
+
+# --- 2018 ---
+
+- title: "Some Ordered Ramsey Numbers of Graphs on Four Vertices"
+  authors: "W Overman, JF Alm, K Coffey, C Langhoff"
+  venue: "Australasian Journal of Combinatorics, Vol 88(3)"
+  year: 2018
+  month: 5
+  paper_url: "/assets/publications/2021_ordered_ramsey/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/1805.09518"
+  guide_slug:
+  tags: [Math]
+  selected: false
+
+- title: "The Subgraph Query Problem for K₆"
+  authors: "W Overman"
+  venue: "Lean 4 / Mathlib formalization"
+  venue_note: "Proof and <a href='https://github.com/wpoverman/k6-subgraph-query-lean' target='_blank' rel='noopener'>Lean formalization</a> automated by AI"
+  year: 2026
+  month: 8
+  paper_url:
+  arxiv_url: "https://github.com/wpoverman/k6-subgraph-query-lean/blob/main/paper.pdf"
+  guide_slug:
+  tags: [Math]
+  selected: false
+  hide_from_all: true

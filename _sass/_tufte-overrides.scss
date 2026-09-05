@@ -1,0 +1,50 @@
+// Feynman red palette — overrides on top of tufte-base
+// Dark red accent on cream background
+
+// Color tokens
+$t-bg:        #fffff8;
+$t-text:      #111;
+$t-red:       #8B0000;
+$t-red-hover: #A51C1C;
+$t-muted:     #666;
+$t-rule:      rgba(0, 0, 0, 0.1);
+
+// Background
+body.tufte {
+  background-color: $t-bg;
+  color: $t-text;
+}
+
+// Links — dark red, underline on hover
+a:link,
+a:visited {
+  color: $t-red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $t-red-hover;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 0.05em;
+}
+
+// Headings — black, not red
+h1, h2, h3 {
+  color: $t-text;
+}
+
+// Horizontal rules
+hr {
+  border-top-color: $t-rule;
+}
+
+// Muted text utility
+.t-muted {
+  color: $t-muted;
+}
+
+// Selection highlight
+::selection {
+  background: rgba(139, 0, 0, 0.15);
+}

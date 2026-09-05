@@ -1,0 +1,57 @@
+---
+layout: tufte-default
+---
+
+<article class="tufte-post">
+  <header>
+    <a href="{{ '/notes/' | relative_url }}" class="tufte-post__back">&larr; Notes</a>
+
+    <div class="tufte-post__meta">
+      {{ page.category }} · {{ page.date | date: "%B %Y" }}
+    </div>
+
+    <h1 class="tufte-post__title">{{ page.title }}</h1>
+
+    {% if page.subtitle %}
+    <p class="tufte-post__subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <section class="tufte-post__body">
+    {{ content }}
+  </section>
+
+  <nav class="tufte-post__nav">
+    {% assign v2_posts = site.posts | where: "layout", "tufte-post" %}
+    {% assign prev_post = nil %}
+    {% assign next_post = nil %}
+    {% assign found = false %}
+    {% for p in v2_posts %}
+      {% if found and prev_post == nil %}
+        {% assign prev_post = p %}
+      {% endif %}
+      {% if p.url == page.url %}
+        {% assign found = true %}
+      {% endif %}
+      {% unless found %}
+        {% assign next_post = p %}
+      {% endunless %}
+    {% endfor %}
+
+    {% if prev_post %}
+      <a href="{{ prev_post.url | relative_url }}" class="tufte-post__nav-link">
+        <span class="label">&larr; Previous</span>
+        <span>{{ prev_post.title }}</span>
+      </a>
+    {% else %}
+      <span></span>
+    {% endif %}
+
+    {% if next_post %}
+      <a href="{{ next_post.url | relative_url }}" class="tufte-post__nav-link tufte-post__nav-link--next">
+        <span class="label">Next &rarr;</span>
+        <span>{{ next_post.title }}</span>
+      </a>
+    {% endif %}
+  </nav>
+</article>

@@ -1,0 +1,469 @@
+// Tufte components — nav, footer, pub list, portrait, filter pills
+
+// ─── Navigation ───
+
+.tufte-nav {
+  padding: 1.5rem 0 1rem;
+  border-bottom: 1px solid $t-rule;
+  margin-bottom: 2rem;
+}
+
+.tufte-nav__name {
+  font-size: 1.4rem;
+  font-weight: normal;
+
+  a {
+    color: $t-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $t-red;
+    }
+  }
+}
+
+// ─── Footer ───
+
+.tufte-footer {
+  margin-top: 4rem;
+  padding: 2rem 0 3rem;
+  border-top: 1px solid $t-rule;
+  font-size: 1.1rem;
+  color: $t-muted;
+}
+
+.tufte-footer p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+// ─── Hero / Bio ───
+
+.tufte-hero {
+  margin-top: 2rem;
+
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+  }
+}
+
+.tufte-hero__subtitle {
+  font-size: 1.2rem;
+  color: $t-muted;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+}
+
+.tufte-hero__bio {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+// Hero layout: text left, photo right
+.tufte-hero__content {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.tufte-hero__text {
+  flex: 1;
+}
+
+.tufte-hero__photo {
+  width: 300px;
+  min-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  margin-top: -1.5rem;
+}
+
+.tufte-hero__bio--detail {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: $t-muted;
+  margin-top: 0.5rem;
+}
+
+.tufte-hero__links {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+
+  a {
+    color: $t-red;
+    text-decoration: none;
+    margin-right: 0.25rem;
+
+    &:hover {
+      color: $t-red-hover;
+      text-decoration: underline;
+    }
+  }
+
+  .sep {
+    color: $t-muted;
+    margin: 0 0.35rem;
+  }
+}
+
+// ─── Portrait (margin note style) ───
+
+.tufte-portrait {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0;
+  position: relative;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+
+  .tufte-portrait__caption {
+    font-size: 1rem;
+    color: $t-muted;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+}
+
+// ─── Bio section ───
+
+.tufte-bio {
+  p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 0;
+  }
+}
+
+// ─── Section headings ───
+
+.tufte-section-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 1.4rem;
+  color: $t-text;
+  border-bottom: 1px solid $t-rule;
+  padding-bottom: 0.5rem;
+}
+
+// ─── Publication list ───
+
+.tufte-pub {
+  margin-bottom: 1.5rem;
+}
+
+.tufte-pub__year-marker {
+  font-size: 1.1rem;
+  color: $t-muted;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.tufte-pub__title {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  display: block;
+}
+
+.tufte-pub__authors {
+  font-size: 1.1rem;
+  color: $t-muted;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.tufte-pub__venue {
+  font-size: 1.1rem;
+  color: $t-muted;
+  font-style: italic;
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.tufte-pub__links {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+
+  a {
+    margin-right: 0.75rem;
+  }
+}
+
+// "All papers →" link
+.tufte-more-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: $t-red;
+
+  &:hover {
+    color: $t-red-hover;
+  }
+}
+
+// ─── News list ───
+
+.tufte-news {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+
+  li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.tufte-news__date {
+  font-size: 1rem;
+  color: $t-muted;
+  margin-right: 0.75rem;
+  font-family: et-book-roman-old-style, et-book, serif;
+}
+
+// ─── Papers page (dense list — no margin notes) ───
+
+.tufte-papers-page {
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.tufte-year-group {
+  margin-bottom: 1rem;
+}
+
+.tufte-year-heading {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: bold;
+  color: $t-text;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid $t-rule;
+  padding-bottom: 0.2rem;
+}
+
+.tufte-paper-row {
+  margin-bottom: 0.6rem;
+  padding-left: 0;
+}
+
+.tufte-paper-row__date {
+  font-size: 1rem;
+  color: $t-muted;
+  display: inline;
+  margin-right: 0.75rem;
+  font-family: et-book-roman-old-style, et-book, serif;
+}
+
+.tufte-paper-row__title {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.tufte-paper-row__meta {
+  font-size: 1.05rem;
+  color: $t-muted;
+  margin-top: 0.15rem;
+
+  .venue {
+    font-style: italic;
+  }
+
+  .venue-note {
+    font-size: 0.95rem;
+    color: lighten($t-muted, 15%);
+  }
+}
+
+.tufte-paper-row__links {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+
+  a {
+    margin-right: 0.75rem;
+  }
+}
+
+// ─── Filter pills ───
+
+.tufte-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.tufte-pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  font-family: et-book, Palatino, Georgia, serif;
+  border: 1px solid $t-rule;
+  border-radius: 3px;
+  background: transparent;
+  color: $t-muted;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  &:hover {
+    border-color: $t-red;
+    color: $t-red;
+  }
+
+  &--active {
+    background: $t-red;
+    color: #fff;
+    border-color: $t-red;
+
+    &:hover {
+      background: $t-red-hover;
+      border-color: $t-red-hover;
+    }
+  }
+}
+
+// ─── Post layout ───
+
+.tufte-post {
+  article {
+    padding-top: 2rem;
+  }
+}
+
+.tufte-post__back {
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.tufte-post__meta {
+  font-size: 1.1rem;
+  color: $t-muted;
+  margin-bottom: 0.5rem;
+}
+
+.tufte-post__title {
+  font-size: 2.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tufte-post__subtitle {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: $t-muted;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.tufte-post__body {
+  section > p,
+  section > footer,
+  section > table {
+    width: 55%;
+  }
+}
+
+.tufte-post__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid $t-rule;
+  gap: 2rem;
+}
+
+.tufte-post__nav-link {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  max-width: 45%;
+
+  .label {
+    font-size: 0.9rem;
+    color: $t-muted;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &--next {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+// ─── Notes index ───
+
+.tufte-notes-row {
+  margin-bottom: 1rem;
+}
+
+.tufte-notes-row__date {
+  font-size: 1rem;
+  color: $t-muted;
+  display: inline;
+  margin-right: 0.75rem;
+}
+
+.tufte-notes-row__title {
+  font-size: 1.3rem;
+}
+
+.tufte-notes-row__category {
+  font-size: 0.9rem;
+  color: $t-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: 0.5rem;
+}
+
+// ─── Responsive ───
+
+@media (max-width: 760px) {
+  .tufte-hero__content {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .tufte-hero__photo {
+    width: 140px;
+    min-width: 140px;
+  }
+
+  .tufte-paper-row {
+    width: 100%;
+  }
+
+  .tufte-post__nav {
+    flex-direction: column;
+  }
+
+  .tufte-post__nav-link {
+    max-width: 100%;
+
+    &--next {
+      text-align: left;
+    }
+  }
+}
