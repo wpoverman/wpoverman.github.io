@@ -1,5 +1,12 @@
 papers:
 
+  - title: "Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems"
+    authors: "<b>W Overman</b>, S Shirani, M Bayati"
+    venue: "NeurIPS 2026: Neural Information Processing Systems. 2026."
+    arxiv: "https://arxiv.org/abs/2603.01339"
+    paper_pdf: "/assets/publications/2026_causal_humanAI/paper.pdf"
+    selected: y
+
   - title: "Planning Against Learning in Rank-1 Games"
     authors: "<b>W Overman</b><sup>†</sup>"
     venue: "arXiv preprint arXiv:2608.18067. 2026."
@@ -28,13 +35,6 @@ papers:
     selected: y
 
 
-  - title: "Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems"
-    authors: "<b>W Overman</b>, S Shirani, M Bayati"
-    venue: "Workshop on Technical AI Governance Research @ ICML 2026"
-    arxiv: "https://arxiv.org/abs/2603.01339"
-    paper_pdf: "/assets/publications/2026_causal_humanAI/paper.pdf"
-    selected: y
-  
   - title: "Conformal Arbitrage: Risk-Controlled Balancing of Competing Objectives in Language Models"
     authors: "<b>W Overman</b>, M Bayati"
     venue: "NeurIPS'25: Neural Information Processing Systems. 2025."
