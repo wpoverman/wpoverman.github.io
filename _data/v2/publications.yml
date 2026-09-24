@@ -4,6 +4,18 @@
 
 # --- 2026 ---
 
+- title: "Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems"
+  authors: "W Overman, S Shirani, M Bayati"
+  venue: "NeurIPS 2026"
+  venue_note: "Earlier version: Workshop on Technical AI Governance Research @ ICML 2026"
+  year: 2026
+  month: 12
+  paper_url: "/assets/publications/2026_causal_humanAI/paper.pdf"
+  arxiv_url: "https://arxiv.org/abs/2603.01339"
+  guide_slug:
+  tags: [Causal Inference, AI Safety]
+  selected: true
+
 - title: "Planning Against Learning in Rank-1 Games"
   authors: "W Overman"
   venue: "arXiv preprint"
@@ -60,17 +72,6 @@
   guide_slug:
   tags: [Healthcare]
   selected: false
-
-- title: "Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems"
-  authors: "W Overman, S Shirani, M Bayati"
-  venue: "Workshop on Technical AI Governance Research @ ICML 2026"
-  year: 2026
-  month: 3
-  paper_url: "/assets/publications/2026_causal_humanAI/paper.pdf"
-  arxiv_url: "https://arxiv.org/abs/2603.01339"
-  guide_slug:
-  tags: [Causal Inference, AI Safety]
-  selected: true
 
 # --- 2025 ---
 
