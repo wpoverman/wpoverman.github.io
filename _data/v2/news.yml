@@ -1,0 +1,39 @@
+# V2 news data
+# Ordered newest first. Templates iterate in this order — do not re-sort.
+# The homepage shows the first 5; /news/ shows all.
+# `html` is rendered as-is, so inline links are fine.
+
+- date: "2026.09"
+  year: 2026
+  html: >-
+    "<a href="https://arxiv.org/abs/2603.01339" target="_blank" rel="noopener">Causal Effects with Unobserved Unit Types in Interacting Human–AI Systems</a>" accepted to NeurIPS 2026
+
+- date: "2026.09"
+  year: 2026
+  html: >-
+    On the 2026–2027 academic job market
+
+- date: "2026.09"
+  year: 2026
+  html: >-
+    Stanford GSB Insights: <a href="https://www.gsb.stanford.edu/insights/blueprint-keeping-humans-control-ai" target="_blank" rel="noopener">"A Blueprint for Keeping Humans in Control of AI"</a>
+
+- date: "2026.09"
+  year: 2026
+  html: >-
+    Invited <a href="https://en.snu.ac.kr/snunow/events?md=v&bbsidx=175016" target="_blank" rel="noopener">talk</a> at Seoul National University: "Control of Increasingly Capable AI Systems with Safety Guarantees"
+
+- date: "2026.09"
+  year: 2026
+  html: >-
+    Will mentor the <a href="https://sparai.org/projects/f26/recjmG0Nfo4Ijp61q/?mentor=William+Overman" target="_blank" rel="noopener">SPAR project</a> titled "Benchmarking When to Apply Oversight for Agentic AI"
+
+- date: "2026.07"
+  year: 2026
+  html: >-
+    Presented two posters at ICML 2026: "<a href="https://arxiv.org/abs/2605.28807" target="_blank" rel="noopener">Calibrating Conservatism for Scalable Oversight</a>" and "<a href="https://arxiv.org/abs/2510.26752" target="_blank" rel="noopener">The Oversight Game</a>"
+
+- date: "2026.05"
+  year: 2026
+  html: >-
+    Successfully defended Ph.D. dissertation at Stanford

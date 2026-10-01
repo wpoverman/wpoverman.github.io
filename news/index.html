@@ -1,0 +1,25 @@
+---
+layout: tufte-default
+title: News — William Overman
+---
+
+{% assign news = site.data.v2.news %}
+{% assign years = news | map: "year" | uniq %}
+
+<section class="tufte-papers-page">
+  <h1>News</h1>
+</section>
+
+{% for year in years %}
+<section class="tufte-year-group" data-year="{{ year }}">
+  <h2 class="tufte-year-heading">{{ year }}</h2>
+
+  <ul class="tufte-news">
+    {% for item in news %}
+    {% if item.year == year %}
+    <li><span class="tufte-news__date">{{ item.date }}</span> {{ item.html }}</li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
