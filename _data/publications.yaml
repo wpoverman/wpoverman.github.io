@@ -52,7 +52,7 @@ papers:
 
   - title: "Occupancy Prediction with Patient Data: Evaluating Time-Series, Patient-Level Aggregation, and Deep Set Models"
     authors: "SH Kim<sup>‡</sup>, <b>W Overman</b><sup>※</sup>, J Pauphilet<sup>‡</sup>, WC Cha"
-    venue: "Major Revision at Manufacturing & Service Operations Management (MSOM)."
+    venue: "Minor Revision at Manufacturing & Service Operations Management (MSOM)."
     arxiv: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523116"
     paper_pdf: "/assets/publications/2023_occupancy_prediction/paper.pdf"
     selected: n
