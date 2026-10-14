@@ -3,6 +3,11 @@
 # The homepage shows the first 5; /news/ shows all.
 # `html` is rendered as-is, so inline links are fine.
 
+- date: "2026.10"
+  year: 2026
+  html: >-
+    Interviewed for Scientific American: <a href="https://www.scientificamerican.com/article/i-gave-metas-muse-and-openais-dots-my-passwords-for-a-week/" target="_blank" rel="noopener">"I gave Meta's Muse and OpenAI's Dots my passwords for a week"</a>
+
 - date: "2026.09"
   year: 2026
   html: >-
